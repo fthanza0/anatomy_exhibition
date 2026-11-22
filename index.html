@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Two Cells to Life — Anatomy Exhibition</title>
+<meta name="description" content="An interactive guide to the female reproductive system, the menstrual cycle and fertilization, made for an anatomy working-model exhibition.">
+<meta name="theme-color" content="#f5f3f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14111f" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="From Two Cells to Life">
+<meta property="og:description" content="Explore the female reproductive system, the menstrual cycle and fertilization. Try the cycle dial and the quiz.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="assets/fonts/two-cells-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="From Two Cells to Life, back to top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="18" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="18" cy="16" r="3.5" fill="#e0457b"/><path d="M2 9c3 2 4 5 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>From Two Cells to Life</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#system">Organs</a></li>
+        <li><a href="#cycle">Cycle</a></li>
+        <li><a href="#fertilization">Fertilization</a></li>
+        <li><a href="#first-week">First week</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a href="#visit">Share</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1><span>From two cells</span> <span>to life</span></h1>
+      <p class="lede">How the female reproductive system prepares, every month, for one sperm and one egg to meet.</p>
+      <p class="context">A companion to our working model for the Anatomy Working Model Making Competition cum Exhibition.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#cycle">Explore the cycle</a>
+        <a class="btn ghost" href="#quiz">Take the quiz</a>
+      </div>
+    </div>
+    <svg class="hero-art cells" viewBox="0 0 420 400" role="img" aria-labelledby="hero-art-t">
+      <title id="hero-art-t">Sperm cells swimming toward an egg cell surrounded by its corona radiata. One sperm has reached the zona pellucida.</title>
+      <defs>
+        <g id="sp">
+          <path class="sp-tail" style="fill:none;stroke:var(--hema);stroke-width:2.2;stroke-linecap:round" d="M-12 0c-10-6-18 6-28 0s-18 6-30 0"/>
+          <rect style="fill:var(--hema)" x="-19" y="-2" width="7" height="4" rx="2"/>
+          <ellipse style="fill:var(--hema)" cx="-6" cy="0" rx="7.5" ry="4.6"/>
+          <ellipse style="fill:var(--amber)" cx="-2.5" cy="0" rx="3" ry="3.2"/>
+        </g>
+      </defs>
+      <g class="corona"><circle cx="147.4" cy="253.7" r="5.8"/><circle cx="141.3" cy="242.4" r="4.8"/><circle cx="137.3" cy="228.1" r="5.9"/><circle cx="136.7" cy="224.5" r="5.8"/><circle cx="132.7" cy="212.0" r="5.3"/><circle cx="134.1" cy="200.9" r="5.2"/><circle cx="133.3" cy="183.0" r="4.7"/><circle cx="137.0" cy="174.5" r="6.1"/><circle cx="139.8" cy="165.7" r="4.6"/><circle cx="143.0" cy="150.8" r="6.0"/><circle cx="150.6" cy="136.3" r="6.0"/><circle cx="156.7" cy="131.4" r="6.1"/><circle cx="168.1" cy="118.8" r="5.6"/><circle cx="173.1" cy="112.7" r="5.0"/><circle cx="181.3" cy="107.4" r="5.0"/><circle cx="191.9" cy="97.4" r="4.7"/><circle cx="210.3" cy="91.2" r="5.1"/><circle cx="219.9" cy="86.3" r="5.2"/><circle cx="223.3" cy="86.5" r="5.1"/><circle cx="245.4" cy="84.3" r="5.1"/><circle cx="257.2" cy="84.9" r="5.2"/><circle cx="268.6" cy="84.1" r="4.5"/><circle cx="271.4" cy="86.5" r="6.0"/><circle cx="286.1" cy="88.3" r="6.0"/><circle cx="297.9" cy="94.3" r="6.1"/><circle cx="311.5" cy="101.6" r="5.7"/><circle cx="318.7" cy="106.4" r="4.5"/><circle cx="333.0" cy="116.4" r="5.5"/><circle cx="340.7" cy="128.8" r="4.9"/><circle cx="346.8" cy="132.7" r="6.1"/><circle cx="351.1" cy="143.2" r="5.2"/><circle cx="358.7" cy="154.5" r="4.8"/><circle cx="363.4" cy="169.7" r="5.9"/><circle cx="365.5" cy="181.5" r="5.0"/><circle cx="365.7" cy="188.4" r="5.8"/><circle cx="365.8" cy="197.8" r="5.7"/><circle cx="364.8" cy="211.8" r="4.5"/><circle cx="362.9" cy="227.4" r="6.1"/><circle cx="359.8" cy="243.3" r="4.9"/><circle cx="356.4" cy="245.0" r="5.3"/><circle cx="348.2" cy="262.6" r="4.9"/><circle cx="343.6" cy="270.2" r="5.6"/><circle cx="333.6" cy="282.8" r="5.6"/><circle cx="330.0" cy="286.2" r="5.0"/><circle cx="315.5" cy="296.1" r="5.7"/><circle cx="308.7" cy="300.0" r="4.9"/><circle cx="299.1" cy="307.0" r="5.5"/><circle cx="285.3" cy="310.9" r="6.1"/><circle cx="271.4" cy="313.9" r="5.8"/><circle cx="257.8" cy="317.8" r="4.7"/><circle cx="247.6" cy="317.5" r="5.9"/><circle cx="230.6" cy="313.7" r="5.0"/><circle cx="227.6" cy="313.6" r="6.1"/><circle cx="210.1" cy="310.9" r="5.1"/><circle cx="196.3" cy="303.4" r="4.9"/><circle cx="185.9" cy="299.0" r="4.7"/><circle cx="178.2" cy="292.4" r="4.8"/><circle cx="171.8" cy="285.2" r="4.8"/><circle cx="163.2" cy="278.4" r="5.6"/><circle cx="157.2" cy="268.4" r="5.0"/><circle cx="191.6" cy="88.9" r="4.8"/><circle cx="209.6" cy="80.5" r="4.6"/><circle cx="213.0" cy="79.9" r="5.4"/><circle cx="231.5" cy="76.5" r="4.8"/><circle cx="244.2" cy="74.4" r="5.0"/><circle cx="251.5" cy="72.7" r="5.0"/><circle cx="266.8" cy="75.5" r="5.2"/><circle cx="282.8" cy="76.9" r="5.1"/><circle cx="286.3" cy="78.7" r="4.8"/><circle cx="295.7" cy="81.4" r="5.2"/><circle cx="315.3" cy="92.6" r="6.0"/><circle cx="321.3" cy="97.3" r="4.5"/><circle cx="332.6" cy="104.4" r="6.0"/><circle cx="337.3" cy="108.7" r="5.1"/><circle cx="348.0" cy="122.4" r="5.0"/><circle cx="357.0" cy="131.2" r="4.7"/><circle cx="362.7" cy="141.7" r="6.1"/><circle cx="364.6" cy="150.2" r="6.1"/><circle cx="372.5" cy="170.6" r="4.6"/><circle cx="374.4" cy="182.0" r="6.0"/><circle cx="376.5" cy="190.1" r="4.7"/><circle cx="375.1" cy="204.4" r="5.2"/><circle cx="375.7" cy="217.4" r="4.8"/><circle cx="373.9" cy="221.5" r="5.4"/><circle cx="369.9" cy="235.1" r="4.9"/><circle cx="366.3" cy="251.3" r="4.5"/><circle cx="361.4" cy="260.3" r="4.5"/><circle cx="351.6" cy="272.6" r="5.5"/><circle cx="347.6" cy="280.3" r="5.0"/><circle cx="340.5" cy="288.0" r="5.2"/><circle cx="329.0" cy="298.0" r="5.2"/><circle cx="326.0" cy="300.9" r="5.3"/><circle cx="313.8" cy="309.5" r="5.8"/><circle cx="299.7" cy="314.8" r="5.3"/><circle cx="292.5" cy="317.5" r="5.2"/><circle cx="281.3" cy="321.9" r="5.3"/><circle cx="270.2" cy="324.8" r="4.6"/><circle cx="249.3" cy="326.8" r="5.3"/><circle cx="245.6" cy="325.9" r="5.1"/><circle cx="222.6" cy="321.9" r="5.9"/><circle cx="209.9" cy="320.1" r="5.8"/><circle cx="207.7" cy="320.1" r="5.3"/><circle cx="187.8" cy="310.9" r="4.8"/><circle cx="179.1" cy="305.6" r="4.6"/><circle cx="173.9" cy="301.3" r="4.7"/><circle cx="160.5" cy="287.8" r="5.9"/><circle cx="158.1" cy="286.3" r="6.0"/><circle cx="150.3" cy="275.9" r="5.3"/><circle cx="143.2" cy="264.4" r="4.8"/><circle cx="136.1" cy="256.7" r="5.6"/><circle cx="130.2" cy="236.0" r="5.8"/><circle cx="128.6" cy="234.1" r="5.5"/><circle cx="124.4" cy="219.3" r="5.4"/><circle cx="123.0" cy="204.3" r="4.7"/><circle cx="124.3" cy="186.9" r="5.1"/><circle cx="126.7" cy="177.4" r="6.1"/><circle cx="128.5" cy="168.2" r="5.8"/><circle cx="132.0" cy="158.4" r="5.7"/><circle cx="132.9" cy="151.0" r="4.9"/><circle cx="141.6" cy="133.2" r="5.5"/><circle cx="150.2" cy="123.9" r="4.5"/><circle cx="153.2" cy="120.9" r="5.5"/><circle cx="164.2" cy="107.7" r="6.0"/><circle cx="171.0" cy="102.8" r="5.6"/><circle cx="180.0" cy="96.9" r="5.1"/><circle cx="356.8" cy="281.8" r="5.5"/><circle cx="346.9" cy="293.3" r="5.5"/><circle cx="339.1" cy="300.5" r="6.1"/><circle cx="332.3" cy="306.2" r="4.6"/><circle cx="318.9" cy="317.7" r="5.8"/><circle cx="310.3" cy="320.4" r="4.5"/><circle cx="296.4" cy="327.3" r="5.1"/><circle cx="284.7" cy="330.6" r="6.1"/><circle cx="271.6" cy="332.9" r="6.0"/><circle cx="269.0" cy="334.1" r="5.2"/><circle cx="254.2" cy="334.0" r="5.8"/><circle cx="245.2" cy="335.4" r="6.1"/><circle cx="231.4" cy="333.2" r="5.5"/><circle cx="214.5" cy="331.0" r="5.8"/><circle cx="207.4" cy="327.9" r="5.0"/><circle cx="197.1" cy="325.7" r="5.8"/><circle cx="179.4" cy="313.9" r="5.9"/><circle cx="168.4" cy="307.9" r="5.7"/><circle cx="162.5" cy="302.2" r="4.7"/><circle cx="156.1" cy="295.7" r="5.0"/><circle cx="142.1" cy="282.6" r="5.9"/><circle cx="136.4" cy="272.4" r="5.4"/><circle cx="130.9" cy="265.9" r="5.4"/><circle cx="126.8" cy="256.9" r="6.1"/><circle cx="121.8" cy="246.5" r="4.5"/><circle cx="119.7" cy="233.8" r="5.7"/><circle cx="114.6" cy="213.0" r="5.0"/><circle cx="115.2" cy="201.6" r="4.9"/><circle cx="114.7" cy="189.1" r="5.6"/><circle cx="114.8" cy="180.1" r="5.3"/><circle cx="118.4" cy="166.0" r="5.9"/><circle cx="120.2" cy="159.5" r="5.4"/><circle cx="125.0" cy="150.2" r="5.5"/><circle cx="126.9" cy="141.1" r="4.7"/><circle cx="134.2" cy="132.0" r="6.0"/><circle cx="143.3" cy="118.4" r="4.5"/><circle cx="147.1" cy="111.2" r="5.5"/><circle cx="162.0" cy="96.3" r="4.6"/><circle cx="171.1" cy="90.5" r="5.9"/><circle cx="183.2" cy="81.1" r="4.6"/><circle cx="194.7" cy="75.2" r="6.1"/><circle cx="197.2" cy="76.3" r="4.7"/><circle cx="207.0" cy="70.7" r="5.8"/><circle cx="226.8" cy="65.8" r="5.5"/><circle cx="234.4" cy="66.7" r="4.6"/><circle cx="252.8" cy="65.5" r="5.0"/><circle cx="260.3" cy="66.4" r="4.9"/><circle cx="270.7" cy="65.6" r="5.1"/><circle cx="283.3" cy="67.5" r="5.3"/><circle cx="301.4" cy="74.5" r="4.5"/><circle cx="306.9" cy="77.4" r="5.8"/><circle cx="317.3" cy="81.9" r="5.4"/><circle cx="326.4" cy="87.1" r="4.6"/><circle cx="341.1" cy="101.2" r="4.5"/><circle cx="345.0" cy="102.6" r="6.1"/><circle cx="351.0" cy="110.0" r="5.3"/><circle cx="364.0" cy="128.7" r="5.3"/><circle cx="368.6" cy="133.0" r="4.9"/><circle cx="375.9" cy="151.9" r="4.8"/><circle cx="379.3" cy="160.1" r="4.7"/><circle cx="381.0" cy="171.2" r="5.8"/><circle cx="385.2" cy="183.7" r="5.5"/><circle cx="384.8" cy="191.3" r="5.1"/><circle cx="383.8" cy="210.5" r="6.0"/><circle cx="384.1" cy="211.0" r="4.9"/><circle cx="380.8" cy="234.7" r="5.1"/><circle cx="376.6" cy="245.8" r="5.3"/><circle cx="375.2" cy="253.2" r="5.7"/><circle cx="368.2" cy="265.0" r="5.0"/><circle cx="366.6" cy="270.5" r="5.6"/></g>
+      <circle class="cyto" cx="250" cy="200" r="104"/>
+      <circle class="zona" cx="250" cy="200" r="108"/>
+      <circle class="pn-f" cx="262" cy="190" r="16"/>
+      <circle class="glow" cx="146" cy="200" r="12" fill="none" stroke="#e0457b" stroke-width="2" opacity=".9"/>
+      <g class="swim s1"><use href="#sp" transform="translate(142 200)"/></g>
+      <g class="swim s2"><use href="#sp" transform="translate(112 112) rotate(30)"/></g>
+      <g class="swim s3"><use href="#sp" transform="translate(116 292) rotate(-34)"/></g>
+      <g class="swim s4"><use href="#sp" transform="translate(70 172) rotate(8)"/></g>
+      <g class="swim s5"><use href="#sp" transform="translate(96 352) rotate(-30)"/></g>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== ORGANS ===================== -->
+<section class="section" id="system" aria-labelledby="system-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="system-h">A system built for one meeting</h2>
+      <p>The female reproductive system makes eggs, produces the hormones that run the monthly cycle, and gives a fertilized egg somewhere to grow. Tap an organ to find it on the diagram.</p>
+    </div>
+
+    <div class="organs">
+      <figure class="organ-figure">
+        <svg class="tract" id="tract" viewBox="0 0 400 310" role="img" aria-labelledby="tract-t">
+          <title id="tract-t">Front-view schematic of the uterus, two fallopian tubes, two ovaries, cervix and vagina.</title>
+          <!-- ligaments -->
+          <path class="lig" d="M150 104 C130 112 112 118 104 122"/>
+          <path class="lig" d="M250 104 C270 112 288 118 296 122"/>
+
+          <g class="part" data-part="tubes">
+            <path class="tube" d="M152 84 C126 70 100 58 80 66 C62 73 56 92 60 108"/>
+            <path class="tube" d="M248 84 C274 70 300 58 320 66 C338 73 344 92 340 108"/>
+            <path class="tube-core" d="M152 84 C126 70 100 58 80 66 C62 73 56 92 60 108"/>
+            <path class="tube-core" d="M248 84 C274 70 300 58 320 66 C338 73 344 92 340 108"/>
+            <g fill="none" stroke="currentColor" class="tube" style="stroke-width:3">
+              <path d="M60 108 l-8 10 M60 108 l-2 13 M60 108 l5 12 M60 108 l10 8"/>
+              <path d="M340 108 l8 10 M340 108 l2 13 M340 108 l-5 12 M340 108 l-10 8"/>
+            </g>
+            <text class="lbl" x="62" y="46">Fallopian tube</text>
+            <text class="lbl" x="276" y="46">Ampulla</text>
+            <path class="lig" d="M300 50 L306 62"/>
+          </g>
+
+          <g class="part" data-part="ovaries">
+            <ellipse class="ovary" cx="86" cy="134" rx="25" ry="15" transform="rotate(-18 86 134)"/>
+            <ellipse class="ovary" cx="314" cy="134" rx="25" ry="15" transform="rotate(18 314 134)"/>
+            <circle class="follicle" cx="78" cy="136" r="5"/><circle class="follicle" cx="94" cy="128" r="3.5"/><circle class="follicle" cx="92" cy="140" r="2.5"/>
+            <circle class="follicle" cx="322" cy="136" r="5"/><circle class="follicle" cx="306" cy="128" r="3.5"/><circle class="follicle" cx="308" cy="140" r="2.5"/>
+            <text class="lbl" x="58" y="172">Ovary</text>
+            <text class="lbl" x="296" y="172">Ovary</text>
+          </g>
+
+          <g class="part" data-part="uterus">
+            <path class="tissue" d="M148 88 C148 50 252 50 252 88 C252 132 230 166 218 190 L182 190 C170 166 148 132 148 88 Z"/>
+            <text class="lbl" x="176" y="44">Uterus</text>
+          </g>
+
+          <g class="part" data-part="endometrium">
+            <path class="lining" d="M166 90 C170 78 230 78 234 90 C230 118 216 148 206 170 L194 170 C184 148 170 118 166 90 Z"/>
+            <text class="lbl" x="84" y="222">Endometrium</text>
+            <path class="lig" d="M150 214 L184 150"/>
+          </g>
+
+          <g class="part" data-part="cervix">
+            <path class="tissue" d="M182 190 L218 190 L214 222 L186 222 Z"/>
+            <path class="lining" d="M197 172 L203 172 L202 222 L198 222 Z"/>
+            <text class="lbl" x="232" y="210">Cervix</text>
+          </g>
+
+          <g class="part" data-part="vagina">
+            <path class="tissue" d="M186 222 L214 222 C218 248 222 268 226 292 L174 292 C178 268 182 248 186 222 Z"/>
+            <text class="lbl" x="234" y="270">Vagina</text>
+          </g>
+        </svg>
+        <figcaption>Simplified front view. Not to scale.</figcaption>
+      </figure>
+
+      <ul class="organ-list" id="organ-list">
+        <li data-part="ovaries"><button type="button" aria-pressed="false">Ovaries</button>
+          <p>Two almond-sized glands, one on each side of the uterus. They hold the follicles that mature into eggs, release one egg each cycle, and make estrogen and progesterone.</p></li>
+        <li data-part="tubes"><button type="button" aria-pressed="false">Fallopian tubes</button>
+          <p>Finger-like fimbriae sweep the released egg into the tube. Fertilization usually happens in its widest part, the ampulla, and the tube then carries the early embryo to the uterus.</p></li>
+        <li data-part="uterus"><button type="button" aria-pressed="false">Uterus</button>
+          <p>A hollow, muscular organ about the size of a pear. Its thick muscle wall, the myometrium, stretches during pregnancy and contracts during birth.</p></li>
+        <li data-part="endometrium"><button type="button" aria-pressed="false">Endometrium</button>
+          <p>The lining of the uterus. It thickens each cycle to receive an embryo. If no embryo implants, its upper layer is shed as the menstrual period.</p></li>
+        <li data-part="cervix"><button type="button" aria-pressed="false">Cervix</button>
+          <p>The narrow lower end of the uterus that opens into the vagina. Its mucus turns thin and slippery around ovulation, which helps sperm pass through.</p></li>
+        <li data-part="vagina"><button type="button" aria-pressed="false">Vagina</button>
+          <p>An elastic muscular canal from the cervix to the outside of the body. It is the birth canal and the route for menstrual flow. The external structures are called the vulva.</p></li>
+      </ul>
+    </div>
+
+    <div class="facts" role="list">
+      <div role="listitem"><strong>1–2 million</strong><span>immature eggs present in the ovaries at birth</span></div>
+      <div role="listitem"><strong>About 400</strong><span>eggs actually released over a lifetime</span></div>
+      <div role="listitem"><strong>12–24 hours</strong><span>how long a released egg can be fertilized</span></div>
+      <div role="listitem"><strong>Up to 5 days</strong><span>how long sperm can survive in the reproductive tract</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CYCLE ===================== -->
+<section class="section" id="cycle" aria-labelledby="cycle-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="cycle-h">The cycle, day by day</h2>
+      <p>The ovary and the uterus run two linked cycles, driven by four hormones. Drag the dial or use the slider to move through a typical 28-day cycle.</p>
+    </div>
+
+    <div class="cycle">
+      <div class="dial-box">
+        <svg class="dial" id="dial" viewBox="0 0 320 320" role="slider" tabindex="0"
+             aria-label="Day of the menstrual cycle" aria-valuemin="1" aria-valuemax="28" aria-valuenow="1" aria-valuetext="Day 1, menstrual phase">
+          <g id="dial-static"></g>
+          <g id="dial-dynamic">
+            <line class="hand" id="dial-hand" x1="160" y1="160" x2="160" y2="20"/>
+            <circle class="knob" id="dial-knob" cx="160" cy="20" r="9"/>
+          </g>
+          <circle cx="160" cy="160" r="70" fill="var(--slide)"/>
+          <text class="center-sub" x="160" y="128">Day</text>
+          <text class="center-day" id="dial-day" x="160" y="174">1</text>
+          <text class="center-phase" id="dial-phase" x="160" y="198">Menstruation</text>
+        </svg>
+        <div class="dial-controls">
+          <button class="icon-btn" id="play" type="button" aria-label="Play the cycle">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+          </button>
+          <label class="visually-hidden" for="day-range">Cycle day</label>
+          <input type="range" id="day-range" min="1" max="28" value="1" step="1">
+        </div>
+        <ul class="legend" aria-label="Dial key">
+          <li><i style="background:var(--hema-2)"></i>Outer ring: ovary</li>
+          <li><i style="background:var(--eosin)"></i>Inner ring: uterus</li>
+          <li><i style="background:none;border:2px dotted var(--teal)"></i>Fertile window</li>
+        </ul>
+      </div>
+
+      <div class="readout" aria-live="polite">
+        <div class="readout-head">
+          <h3 id="ro-title">Day 1</h3>
+          <span class="pill" id="ro-pill">Menstrual phase</span>
+          <span class="pill fertile" id="ro-fertile" hidden>Fertile window</span>
+        </div>
+        <dl>
+          <dt>Ovary</dt><dd id="ro-ovary"></dd>
+          <dt>Uterus</dt><dd id="ro-uterus"></dd>
+          <dt>Hormones</dt><dd id="ro-hormones"></dd>
+        </dl>
+        <figure class="chart" style="margin-inline:0;margin-bottom:0">
+          <svg id="chart" viewBox="0 0 340 170" role="img" aria-labelledby="chart-t">
+            <title id="chart-t">Relative levels of FSH, LH, estrogen and progesterone across a 28-day cycle. LH spikes just before ovulation on day 14; estrogen peaks just before it; progesterone peaks around day 21.</title>
+          </svg>
+          <figcaption class="chart-cap">Relative hormone levels, simplified. Real cycles last anywhere from 21 to 35 days. The luteal phase stays near 14 days, so a longer cycle means a later ovulation.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FERTILIZATION ===================== -->
+<section class="section" id="fertilization" aria-labelledby="fert-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="fert-h">Two cells become one</h2>
+      <p>Of the millions of sperm released, a few hundred reach the egg in the ampulla of the fallopian tube. Only one gets in.</p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="Several sperm approaching an egg surrounded by corona cells"><g class="corona"><circle cx="46.5" cy="93.9" r="2.8"/><circle cx="39.2" cy="88.8" r="2.8"/><circle cx="34.3" cy="83.4" r="3.2"/><circle cx="30.9" cy="78.8" r="3.2"/><circle cx="26.9" cy="69.5" r="2.9"/><circle cx="24.4" cy="63.1" r="3.3"/><circle cx="24.4" cy="56.3" r="2.8"/><circle cx="27.5" cy="47.5" r="2.9"/><circle cx="29.4" cy="43.2" r="3.6"/><circle cx="33.2" cy="36.5" r="3.4"/><circle cx="39.1" cy="30.8" r="2.8"/><circle cx="44.7" cy="27.9" r="3.4"/><circle cx="52.8" cy="24.5" r="3.3"/><circle cx="60.2" cy="23.4" r="3.5"/><circle cx="68.5" cy="24.0" r="3.3"/><circle cx="75.4" cy="24.8" r="3.5"/><circle cx="81.5" cy="27.6" r="2.8"/><circle cx="87.8" cy="32.8" r="2.9"/><circle cx="91.8" cy="39.5" r="3.4"/><circle cx="96.6" cy="46.5" r="3.6"/><circle cx="98.5" cy="52.1" r="3.3"/><circle cx="98.9" cy="60.5" r="3.6"/><circle cx="97.8" cy="69.3" r="3.4"/><circle cx="96.8" cy="73.4" r="3.4"/><circle cx="91.6" cy="83.1" r="3.0"/><circle cx="87.8" cy="86.9" r="2.7"/><circle cx="81.2" cy="91.0" r="2.8"/><circle cx="76.3" cy="94.6" r="2.9"/><circle cx="68.2" cy="96.3" r="3.6"/><circle cx="61.4" cy="96.9" r="3.3"/><circle cx="51.0" cy="95.9" r="3.6"/><circle cx="54.8" cy="102.1" r="3.6"/><circle cx="45.6" cy="99.1" r="2.9"/><circle cx="41.6" cy="97.3" r="3.2"/><circle cx="34.2" cy="92.3" r="2.7"/><circle cx="29.4" cy="87.7" r="3.3"/><circle cx="23.5" cy="79.8" r="3.2"/><circle cx="21.1" cy="74.2" r="2.8"/><circle cx="18.9" cy="65.7" r="3.6"/><circle cx="19.2" cy="58.6" r="3.1"/><circle cx="19.2" cy="54.1" r="2.8"/><circle cx="21.5" cy="47.1" r="2.9"/><circle cx="25.2" cy="39.4" r="2.7"/><circle cx="28.7" cy="33.8" r="3.1"/><circle cx="32.5" cy="27.8" r="3.3"/><circle cx="39.5" cy="23.8" r="3.1"/><circle cx="47.1" cy="20.3" r="3.6"/><circle cx="56.8" cy="17.4" r="3.2"/><circle cx="60.4" cy="17.7" r="3.1"/><circle cx="68.7" cy="17.0" r="2.9"/><circle cx="75.1" cy="18.2" r="3.3"/><circle cx="82.3" cy="22.0" r="2.7"/><circle cx="90.4" cy="26.6" r="3.6"/><circle cx="95.2" cy="33.4" r="3.1"/><circle cx="99.0" cy="37.1" r="3.3"/><circle cx="102.6" cy="46.6" r="2.9"/><circle cx="105.4" cy="53.9" r="3.6"/><circle cx="105.5" cy="61.5" r="3.5"/><circle cx="104.5" cy="66.4" r="3.1"/><circle cx="102.2" cy="72.7" r="3.0"/><circle cx="100.0" cy="80.9" r="3.7"/><circle cx="95.6" cy="88.0" r="3.7"/><circle cx="87.9" cy="94.1" r="2.9"/><circle cx="84.1" cy="96.3" r="2.9"/><circle cx="76.3" cy="101.3" r="3.6"/><circle cx="69.5" cy="102.6" r="3.5"/><circle cx="63.7" cy="103.2" r="3.6"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona" cx="62" cy="60" r="30"/><circle class="pn-f" cx="68" cy="56" r="7"/><use href="#sp" transform="translate(11.3 41.5) rotate(20) scale(0.42)"/><use href="#sp" transform="translate(7.5 79.8) rotate(-20) scale(0.42)"/><use href="#sp" transform="translate(29.9 14.1) rotate(55) scale(0.42)"/><use href="#sp" transform="translate(33.5 109.4) rotate(-60) scale(0.42)"/><use href="#sp" transform="translate(91.0 9.8) rotate(120) scale(0.42)"/></svg></div>
+        <h3>Sperm reach the egg</h3>
+        <p>Sperm swim through the cervix and uterus into the tube, and push through the corona radiata, the layer of follicle cells around the egg.</p>
+      </li>
+      <li>
+        <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="One sperm head reaching the zona pellucida"><g class="corona"><circle cx="70.3" cy="24.0" r="2.9"/><circle cx="77.4" cy="26.7" r="3.5"/><circle cx="84.4" cy="30.8" r="3.1"/><circle cx="90.2" cy="35.4" r="2.9"/><circle cx="92.1" cy="39.5" r="3.6"/><circle cx="96.5" cy="48.3" r="3.6"/><circle cx="99.1" cy="56.0" r="3.1"/><circle cx="98.3" cy="61.9" r="2.7"/><circle cx="97.6" cy="70.9" r="3.3"/><circle cx="94.4" cy="77.6" r="3.6"/><circle cx="90.2" cy="83.2" r="3.0"/><circle cx="86.4" cy="87.2" r="3.3"/><circle cx="80.7" cy="91.7" r="2.9"/><circle cx="71.6" cy="95.5" r="3.2"/><circle cx="65.6" cy="97.5" r="3.1"/><circle cx="56.8" cy="96.6" r="3.3"/><circle cx="51.2" cy="94.5" r="3.2"/><circle cx="45.5" cy="92.2" r="3.5"/><circle cx="38.9" cy="88.9" r="3.5"/><circle cx="32.9" cy="82.4" r="3.2"/><circle cx="28.3" cy="76.4" r="2.8"/><circle cx="26.6" cy="69.0" r="3.0"/><circle cx="25.0" cy="60.9" r="3.3"/><circle cx="24.9" cy="53.4" r="3.2"/><circle cx="27.4" cy="46.8" r="3.2"/><circle cx="31.0" cy="39.9" r="3.3"/><circle cx="34.5" cy="34.1" r="3.4"/><circle cx="41.5" cy="28.3" r="3.0"/><circle cx="47.2" cy="25.3" r="3.6"/><circle cx="53.3" cy="24.7" r="3.2"/><circle cx="60.4" cy="23.5" r="2.8"/><circle cx="41.8" cy="21.3" r="2.9"/><circle cx="48.7" cy="18.8" r="2.9"/><circle cx="56.7" cy="16.5" r="2.9"/><circle cx="64.6" cy="17.3" r="3.2"/><circle cx="72.3" cy="17.7" r="2.9"/><circle cx="77.1" cy="19.7" r="3.1"/><circle cx="82.8" cy="22.7" r="3.5"/><circle cx="88.6" cy="26.1" r="3.2"/><circle cx="93.8" cy="31.5" r="3.4"/><circle cx="98.9" cy="39.5" r="3.7"/><circle cx="103.8" cy="46.9" r="2.8"/><circle cx="103.5" cy="52.3" r="3.5"/><circle cx="104.4" cy="59.7" r="3.2"/><circle cx="104.4" cy="70.0" r="3.0"/><circle cx="103.4" cy="74.1" r="3.3"/><circle cx="97.9" cy="82.4" r="2.8"/><circle cx="93.9" cy="88.7" r="2.8"/><circle cx="87.8" cy="94.7" r="3.5"/><circle cx="84.8" cy="97.2" r="2.8"/><circle cx="74.6" cy="101.0" r="3.1"/><circle cx="68.7" cy="103.2" r="3.0"/><circle cx="62.9" cy="103.0" r="3.0"/><circle cx="55.6" cy="101.9" r="2.8"/><circle cx="48.0" cy="100.3" r="3.0"/><circle cx="39.2" cy="96.0" r="3.2"/><circle cx="35.1" cy="93.2" r="2.7"/><circle cx="29.9" cy="87.4" r="3.5"/><circle cx="24.8" cy="80.5" r="3.2"/><circle cx="21.4" cy="72.1" r="3.6"/><circle cx="19.6" cy="67.1" r="3.6"/><circle cx="19.0" cy="59.8" r="3.4"/><circle cx="20.5" cy="49.9" r="3.6"/><circle cx="21.9" cy="43.8" r="3.1"/><circle cx="25.4" cy="38.9" r="2.9"/><circle cx="28.0" cy="33.0" r="3.0"/><circle cx="34.2" cy="28.1" r="3.6"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona" cx="62" cy="60" r="30"/><circle class="pn-f" cx="68" cy="56" r="7"/><use href="#sp" transform="translate(30.5 60.0) rotate(-0) scale(0.42)"/><use href="#sp" transform="translate(22.4 20.4) rotate(45) scale(0.42)"/><use href="#sp" transform="translate(21.7 100.3) rotate(-45) scale(0.42)"/><use href="#sp" transform="translate(81.8 5.5) rotate(110) scale(0.42)"/></svg></div>
+        <h3>The acrosome reaction</h3>
+        <p>Enzymes released from the acrosome, a cap on the sperm head, digest a path through the zona pellucida, the egg's glassy coat.</p>
+      </li>
+      <li>
+        <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="A sperm inside the egg; the zona has hardened and other sperm are blocked outside"><g class="corona"><circle cx="87.5" cy="33.7" r="3.0"/><circle cx="91.7" cy="38.1" r="2.9"/><circle cx="95.5" cy="45.2" r="3.7"/><circle cx="98.6" cy="54.1" r="3.0"/><circle cx="98.6" cy="61.5" r="3.1"/><circle cx="98.4" cy="65.4" r="3.2"/><circle cx="95.6" cy="74.2" r="3.2"/><circle cx="93.1" cy="79.2" r="2.8"/><circle cx="87.4" cy="85.9" r="2.7"/><circle cx="82.1" cy="90.5" r="3.3"/><circle cx="75.1" cy="95.1" r="3.4"/><circle cx="67.1" cy="97.3" r="3.1"/><circle cx="60.9" cy="97.8" r="2.9"/><circle cx="52.1" cy="95.9" r="2.8"/><circle cx="44.5" cy="93.3" r="3.4"/><circle cx="38.5" cy="89.3" r="2.9"/><circle cx="34.0" cy="84.2" r="3.6"/><circle cx="28.7" cy="77.4" r="3.3"/><circle cx="26.0" cy="70.0" r="3.4"/><circle cx="26.1" cy="64.8" r="2.9"/><circle cx="25.8" cy="57.0" r="3.6"/><circle cx="26.5" cy="48.8" r="3.4"/><circle cx="29.9" cy="41.6" r="2.7"/><circle cx="34.2" cy="34.9" r="3.2"/><circle cx="39.1" cy="30.6" r="2.8"/><circle cx="46.5" cy="26.9" r="2.8"/><circle cx="51.6" cy="24.1" r="2.9"/><circle cx="60.8" cy="22.2" r="3.2"/><circle cx="67.0" cy="23.4" r="3.4"/><circle cx="75.7" cy="25.4" r="3.4"/><circle cx="79.8" cy="28.2" r="3.0"/><circle cx="59.2" cy="17.0" r="2.7"/><circle cx="65.6" cy="17.5" r="3.4"/><circle cx="75.8" cy="18.9" r="3.0"/><circle cx="81.8" cy="21.9" r="3.2"/><circle cx="87.2" cy="24.3" r="2.9"/><circle cx="95.6" cy="32.0" r="2.7"/><circle cx="98.6" cy="36.4" r="3.7"/><circle cx="101.3" cy="43.4" r="2.9"/><circle cx="103.9" cy="52.6" r="3.3"/><circle cx="104.9" cy="56.5" r="3.7"/><circle cx="105.4" cy="64.0" r="3.2"/><circle cx="102.8" cy="74.6" r="3.0"/><circle cx="99.3" cy="81.3" r="2.7"/><circle cx="97.4" cy="84.4" r="3.2"/><circle cx="91.3" cy="90.6" r="3.1"/><circle cx="86.1" cy="96.3" r="2.7"/><circle cx="77.7" cy="100.6" r="2.8"/><circle cx="69.6" cy="102.7" r="3.6"/><circle cx="64.8" cy="102.7" r="3.1"/><circle cx="54.3" cy="102.5" r="3.1"/><circle cx="49.5" cy="100.8" r="2.8"/><circle cx="43.5" cy="99.4" r="3.0"/><circle cx="34.7" cy="92.7" r="3.0"/><circle cx="30.7" cy="88.7" r="3.1"/><circle cx="24.2" cy="81.8" r="3.5"/><circle cx="21.4" cy="76.2" r="3.7"/><circle cx="19.6" cy="69.2" r="2.8"/><circle cx="19.1" cy="60.9" r="3.5"/><circle cx="19.8" cy="53.9" r="2.8"/><circle cx="22.2" cy="45.6" r="3.2"/><circle cx="23.8" cy="40.9" r="3.5"/><circle cx="29.4" cy="32.5" r="3.4"/><circle cx="32.2" cy="28.9" r="3.1"/><circle cx="38.0" cy="25.0" r="2.9"/><circle cx="47.1" cy="19.7" r="2.9"/><circle cx="54.2" cy="16.9" r="3.2"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona hard" cx="62" cy="60" r="30"/><circle class="pn-f" cx="68" cy="56" r="7"/><use href="#sp" transform="translate(48.0 60.0) rotate(0) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(26.6 24.6) rotate(45) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(25.9 96.1) rotate(-45) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(79.8 11.1) rotate(110) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(88.0 105.0) rotate(-120) scale(0.42)"/></svg></div>
+        <h3>One sperm fuses</h3>
+        <p>The first sperm to fuse with the egg membrane triggers the cortical reaction. The zona hardens, and every other sperm is shut out.</p>
+      </li>
+      <li>
+        <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="Male and female pronuclei side by side in the centre of the zygote"><g class="corona"><circle cx="86.1" cy="87.2" r="3.1"/><circle cx="72.3" cy="95.1" r="3.0"/><circle cx="54.1" cy="96.8" r="3.5"/><circle cx="39.9" cy="89.5" r="3.3"/><circle cx="29.5" cy="77.0" r="2.8"/><circle cx="24.2" cy="61.6" r="2.8"/><circle cx="28.1" cy="44.5" r="3.6"/><circle cx="37.8" cy="32.5" r="3.0"/><circle cx="52.7" cy="24.3" r="3.7"/><circle cx="70.9" cy="23.4" r="2.7"/><circle cx="83.3" cy="29.3" r="3.6"/><circle cx="95.1" cy="43.1" r="2.7"/><circle cx="99.7" cy="58.8" r="3.6"/><circle cx="95.8" cy="76.9" r="3.0"/><circle cx="96.3" cy="86.1" r="3.4"/><circle cx="80.8" cy="99.1" r="3.4"/><circle cx="65.2" cy="102.8" r="3.3"/><circle cx="51.4" cy="102.2" r="3.0"/><circle cx="33.3" cy="92.3" r="3.0"/><circle cx="25.3" cy="81.5" r="3.4"/><circle cx="19.8" cy="63.4" r="2.8"/><circle cx="20.7" cy="47.5" r="3.1"/><circle cx="27.8" cy="33.6" r="2.7"/><circle cx="40.9" cy="22.6" r="3.7"/><circle cx="58.2" cy="16.5" r="3.2"/><circle cx="73.2" cy="18.9" r="3.7"/><circle cx="89.7" cy="27.5" r="2.7"/><circle cx="100.1" cy="39.5" r="3.1"/><circle cx="104.9" cy="54.6" r="3.7"/><circle cx="102.7" cy="71.0" r="3.1"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona hard" cx="62" cy="60" r="30"/><circle class="pn-m" cx="55" cy="60" r="7"/><circle class="pn-f" cx="69" cy="60" r="7"/></svg></div>
+        <h3>A zygote forms</h3>
+        <p>The egg finishes its second meiotic division. The male and female pronuclei, each with 23 chromosomes, combine to give the zygote its 46.</p>
+      </li>
+    </ol>
+
+    <div class="anatomy-pair">
+      <section aria-labelledby="sperm-h">
+        <h3 id="sperm-h">Sperm cell</h3>
+        <ul>
+          <li><b>Acrosome</b>: enzyme-filled cap on the head</li>
+          <li><b>Nucleus</b>: 23 chromosomes from the father</li>
+          <li><b>Middle piece</b>: packed with mitochondria that power swimming</li>
+          <li><b>Tail (flagellum)</b>: whips to drive the cell forward</li>
+        </ul>
+      </section>
+      <section aria-labelledby="ovum-h">
+        <h3 id="ovum-h">Egg cell (ovum)</h3>
+        <ul>
+          <li><b>Corona radiata</b>: outer layer of follicle cells</li>
+          <li><b>Zona pellucida</b>: protective glycoprotein coat</li>
+          <li><b>Cell membrane</b>: where the sperm fuses</li>
+          <li><b>Cytoplasm</b>: nutrients for the first cell divisions</li>
+          <li><b>Nucleus</b>: 23 chromosomes from the mother</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FIRST WEEK ===================== -->
+<section class="section" id="first-week" aria-labelledby="week-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="week-h">The first week</h2>
+      <p>While it travels down the tube, the zygote divides again and again without growing. Day 0 is the day of fertilization.</p>
+    </div>
+
+    <ol class="timeline">
+      <li><div class="when">Day 0</div><div class="art"><svg class="cells" viewBox="0 0 40 40" role="img" aria-label="One cell"><circle class="cyto" cx="20" cy="20" r="15"/><circle class="zona" style="stroke-width:2" cx="20" cy="20" r="16"/><circle class="pn-z" cx="20" cy="20" r="5"/></svg></div>
+        <h3>Zygote <span class="where">Ampulla</span></h3>
+        <p>A single cell with a full set of 46 chromosomes.</p></li>
+      <li><div class="when">Day 1–2</div><div class="art"><svg class="cells" viewBox="0 0 40 40" role="img" aria-label="Two cells"><circle class="cyto" cx="20" cy="20" r="15"/><circle class="zona" style="stroke-width:2" cx="20" cy="20" r="16"/><circle cx="14.5" cy="20.0" r="6.4" class="pn-z" style="fill-opacity:1;stroke:var(--surface);stroke-width:.8"/><circle cx="25.5" cy="20.0" r="6.4" class="pn-z" style="fill-opacity:1;stroke:var(--surface);stroke-width:.8"/></svg></div>
+        <h3>Cleavage <span class="where">Fallopian tube</span></h3>
+        <p>The first division happens about 30 hours after fertilization. The cells, called blastomeres, get smaller with each split.</p></li>
+      <li><div class="when">Day 3–4</div><div class="art"><svg class="cells" viewBox="0 0 40 40" role="img" aria-label="A solid ball of many small cells"><circle class="cyto" cx="20" cy="20" r="16"/><circle class="zona" style="stroke-width:2" cx="20" cy="20" r="17"/><circle cx="20.0" cy="20.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="26.4" cy="20.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="13.6" cy="20.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="23.2" cy="25.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="16.8" cy="25.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="23.2" cy="14.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="16.8" cy="14.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="29.6" cy="25.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="10.4" cy="25.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="29.6" cy="14.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="10.4" cy="14.5" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="20.0" cy="31.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="20.0" cy="9.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="26.4" cy="11.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="13.6" cy="29.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="26.4" cy="29.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/><circle cx="13.6" cy="11.0" r="3.4" class="pn-z" style="fill-opacity:0.85;stroke:var(--surface);stroke-width:.8"/></svg></div>
+        <h3>Morula <span class="where">Entering uterus</span></h3>
+        <p>A solid ball of 16 or more cells that looks like a mulberry. It reaches the uterus around day 4.</p></li>
+      <li><div class="when">Day 5</div><div class="art"><svg class="cells" viewBox="0 0 40 40" role="img" aria-label="A hollow ball of cells with an inner cell mass on one side"><circle cx="20" cy="20" r="14.5" class="cyto"/><circle cx="32.5" cy="20.0" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="31.4" cy="25.1" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="28.4" cy="29.3" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="23.9" cy="31.9" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="18.7" cy="32.4" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.8" cy="30.8" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="9.9" cy="27.3" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="7.8" cy="22.6" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="7.8" cy="17.4" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="9.9" cy="12.7" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.7" cy="9.2" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="18.7" cy="7.6" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="23.9" cy="8.1" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="28.4" cy="10.7" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="31.4" cy="14.9" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.0" cy="18.0" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.0" cy="23.0" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="17.0" cy="15.5" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="17.0" cy="20.5" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="16.5" cy="25.3" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/></svg></div>
+        <h3>Blastocyst <span class="where uterus">Uterus</span></h3>
+        <p>A fluid-filled ball. Its inner cell mass becomes the embryo; the outer trophoblast will help form the placenta.</p></li>
+      <li><div class="when">Day 6–10</div><div class="art"><svg class="cells" viewBox="0 0 40 40" role="img" aria-label="Blastocyst sinking into the uterine lining"><g transform="translate(0 -4)"><circle cx="20" cy="20" r="14.5" class="cyto"/><circle cx="32.5" cy="20.0" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="31.4" cy="25.1" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="28.4" cy="29.3" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="23.9" cy="31.9" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="18.7" cy="32.4" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.8" cy="30.8" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="9.9" cy="27.3" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="7.8" cy="22.6" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="7.8" cy="17.4" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="9.9" cy="12.7" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.7" cy="9.2" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="18.7" cy="7.6" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="23.9" cy="8.1" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="28.4" cy="10.7" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="31.4" cy="14.9" r="2.6" class="pn-m" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.0" cy="18.0" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="13.0" cy="23.0" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="17.0" cy="15.5" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="17.0" cy="20.5" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/><circle cx="16.5" cy="25.3" r="2.8" class="pn-z" style="fill-opacity:0.9;stroke:var(--surface);stroke-width:.8"/></g><clipPath id="tl-clip"><circle cx="20" cy="20" r="19.5"/></clipPath><path clip-path="url(#tl-clip)" d="M0 26 q5 -3 10 0 t10 0 t10 0 t10 0 V40 H0 Z" class="pn-f" style="fill-opacity:.55"/></svg></div>
+        <h3>Implantation <span class="where uterus">Endometrium</span></h3>
+        <p>The blastocyst burrows into the endometrium and starts making hCG. This hormone keeps the corpus luteum producing progesterone, so the lining is not shed. Pregnancy tests detect hCG.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+<section class="section" id="quiz" aria-labelledby="quiz-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="quiz-h">Test yourself</h2>
+      <p>Ten questions on everything above. You get the answer and an explanation after each one.</p>
+    </div>
+    <div class="quiz" id="quiz-box">
+      <noscript><p>The quiz needs JavaScript turned on.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POSTERS ===================== -->
+<section class="section" id="posters" aria-labelledby="posters-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="posters-h">Exhibition posters</h2>
+      <p>The illustrated charts displayed with our model. Open one to see it full size.</p>
+    </div>
+    <div class="posters">
+      <figure class="poster">
+        <a href="assets/img/poster-system-1066.webp">
+          <picture>
+            <source type="image/webp" srcset="assets/img/poster-system-640.webp 640w, assets/img/poster-system-1066.webp 1066w" sizes="(min-width: 72rem) 36rem, (min-width: 40rem) 50vw, 100vw">
+            <img src="assets/img/poster-system-1066.jpg" width="1066" height="1599" loading="lazy" decoding="async"
+                 alt="Illustrated poster of the female reproductive system: main organs, the menstrual cycle, key hormones, the fertilization process and self-care tips.">
+          </picture>
+        </a>
+        <figcaption>The female reproductive system and fertilization</figcaption>
+      </figure>
+      <figure class="poster">
+        <a href="assets/img/poster-fertilization-732.webp">
+          <picture>
+            <source type="image/webp" srcset="assets/img/poster-fertilization-640.webp 640w, assets/img/poster-fertilization-732.webp 732w" sizes="(min-width: 72rem) 36rem, (min-width: 40rem) 50vw, 100vw">
+            <img src="assets/img/poster-fertilization-732.jpg" width="732" height="1172" loading="lazy" decoding="async"
+                 alt="Labelled fertilization diagram showing sperm structure, the parts of the egg cell, and four stages from sperm approaching the egg to the zygote forming.">
+          </picture>
+        </a>
+        <figcaption>Fertilization diagram: how sperm and egg unite</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VISIT / SHARE ===================== -->
+<section class="section" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="visit-h">Take it with you</h2>
+      <p>Scan the code to open this page on your phone, or print it for the exhibition table.</p>
+    </div>
+    <div class="visit">
+      <div class="credits-col">
+        <h3>About this exhibit</h3>
+        <p>Made for the Anatomy Working Model Making Competition cum Exhibition.</p>
+        <!-- EDIT: fill in the details below. Any row left empty is hidden automatically. -->
+        <dl class="credits">
+          <div><dt>Presented by</dt><dd></dd></div>
+          <div><dt>Class / department</dt><dd></dd></div>
+          <div><dt>Institution</dt><dd></dd></div>
+          <div><dt>Date</dt><dd></dd></div>
+          <div><dt>Venue</dt><dd></dd></div>
+        </dl>
+      </div>
+      <div class="qr-card">
+        <p class="qr-print-title">From Two Cells to Life — scan to explore</p>
+        <div class="qr-code" id="qr-code" aria-live="polite"><span class="note">QR code loads here</span></div>
+        <p class="qr-url" id="qr-url"></p>
+        <form class="qr-form" id="qr-form" hidden novalidate>
+          <label for="qr-input">Website address</label>
+          <input id="qr-input" type="url" inputmode="url" placeholder="https://username.github.io/anatomy/" autocomplete="url">
+          <p class="err" id="qr-err" role="alert"></p>
+          <button class="btn" type="submit" style="width:100%">Make QR code</button>
+        </form>
+        <div class="qr-actions">
+          <button class="btn ghost" type="button" id="qr-download">Download PNG</button>
+          <button class="btn ghost" type="button" id="qr-print">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>From Two Cells to Life</b>, an anatomy exhibition project.</p>
+    <p>For learning only, not medical advice. Diagrams are simplified. <a href="present.html">Presentation mode</a></p>
+  </div>
+</footer>
+</body>
+</html>
