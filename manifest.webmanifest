@@ -1,0 +1,11 @@
+{
+  "name": "From Two Cells to Life",
+  "short_name": "Two Cells",
+  "description": "The female reproductive system, the menstrual cycle and fertilization: an anatomy exhibition guide.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f3f8",
+  "theme_color": "#2d2463",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
