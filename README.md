@@ -8,7 +8,7 @@ It is a plain static site: no build step, no frameworks, no outside services. It
 
 | Page | What it's for |
 | --- | --- |
-| `index.html` | The website visitors open on their phones: an interactive organ diagram, a 28-day cycle dial with a live hormone chart, fertilization steps, a first-week timeline, a 10-question quiz, the exhibition posters and a QR code. |
+| `index.html` | The website visitors open on their phones: an interactive organ diagram, how an egg matures in the ovary, a 28-day cycle dial with a live hormone chart, the four hormones, the sperm's journey and fertilization, the first week, health and self-care, a 12-question quiz, a poster gallery with downloads, and a QR code. |
 | `present.html` | Presentation mode for a laptop, TV or projector at the exhibit table. |
 | `anatomy_exhibition_website.html` | Redirects to the new site, so old links and QR codes still work. |
 
@@ -17,12 +17,15 @@ assets/
   css/site.css, present.css
   js/main.js, present.js, vendor/qrcode.min.js (MIT)
   fonts/two-cells-sans.woff2 (Atkinson Hyperlegible Next with an unslashed zero, SIL OFL 1.1)
-  img/  the two posters as WebP (640px and full size) plus a JPEG fallback
+  posters/  the 11 exhibition posters: 400px thumbnails, full-size WebP for viewing,
+            the original JPEGs for download, and a ZIP of all of them
 sw.js                 offline cache
 manifest.webmanifest  lets visitors add the site to their home screen
 ```
 
 The first visit downloads about 150 KB. The poster images load only when someone scrolls down to them.
+
+To add a poster, put its thumbnail, WebP and JPEG in `assets/posters/` with the same naming pattern, add a `<li>` to the `#gallery` list in `index.html`, and rebuild the ZIP.
 
 ## Publish on GitHub Pages
 

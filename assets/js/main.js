@@ -261,6 +261,8 @@
     { q: "How many chromosomes does a human zygote have?", a: ["23", "46", "92", "44"], c: 1, e: "23 from the egg plus 23 from the sperm gives 46, the full diploid number." },
     { q: "Which hormone mainly prepares the lining for implantation after ovulation?", a: ["FSH", "LH", "Progesterone", "Testosterone"], c: 2, e: "Progesterone from the corpus luteum makes the endometrium soft, glandular and ready for an embryo." },
     { q: "Roughly when does the blastocyst implant in the uterine lining?", a: ["Within 2 hours", "Day 1", "Days 6 to 10", "Day 28"], c: 2, e: "The blastocyst reaches the uterus around day 4 and burrows into the endometrium from about day 6." },
+    { q: "Which part of the fallopian tube is narrow and joins the uterus?", a: ["Ampulla", "Fimbriae", "Infundibulum", "Isthmus"], c: 3, e: "The isthmus is the narrow end next to the uterus. The wide ampulla, nearer the ovary, is where fertilization happens." },
+    { q: "Which vaccine helps protect against cervical cancer?", a: ["BCG vaccine", "HPV vaccine", "Flu vaccine", "Tetanus vaccine"], c: 1, e: "Most cervical cancers are caused by HPV, the human papillomavirus. The vaccine protects against the main high-risk types." },
     { q: "Which hormone do pregnancy tests detect?", a: ["hCG", "FSH", "Estrogen", "Insulin"], c: 0, e: "The implanting embryo makes hCG, which keeps the corpus luteum alive. Pregnancy tests detect it." },
   ];
 
@@ -388,6 +390,56 @@
     });
   }
 
+  /* ---------------- Poster gallery ---------------- */
+  function initGallery() {
+    const list = $("#gallery"), box = $("#lightbox");
+    if (!list || !box || typeof box.showModal !== "function") return; // links still open the full image
+    const links = $$("a", list);
+    const img = $("#lb-img"), title = $("#lb-title"), count = $("#lb-count"), dl = $("#lb-download"), open = $("#lb-open");
+    let i = 0, opener = null;
+    const preload = (k) => { const a = links[(k + links.length) % links.length]; if (a) new Image().src = a.dataset.full; };
+    function show(k) {
+      i = (k + links.length) % links.length;
+      const a = links[i];
+      img.src = a.dataset.full;
+      img.alt = a.querySelector("img").alt;
+      title.textContent = a.dataset.title;
+      count.textContent = `${i + 1} of ${links.length}`;
+      dl.href = a.getAttribute("href");
+      dl.setAttribute("download", "from-two-cells-to-life-" + a.getAttribute("href").split("/").pop());
+      open.href = a.dataset.full;
+      preload(i + 1); preload(i - 1);
+    }
+    list.addEventListener("click", (e) => {
+      const a = e.target.closest("a");
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      opener = a;
+      show(links.indexOf(a));
+      box.showModal();
+      $("#lb-close").focus();
+    });
+    $("#lb-prev").addEventListener("click", () => show(i - 1));
+    $("#lb-next").addEventListener("click", () => show(i + 1));
+    $("#lb-close").addEventListener("click", () => box.close());
+    box.addEventListener("close", () => { if (opener) opener.focus(); });
+    box.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") { e.preventDefault(); show(i - 1); }
+      else if (e.key === "ArrowRight") { e.preventDefault(); show(i + 1); }
+    });
+    // Swipe left/right to move between posters (ignored while pinch-zoomed in).
+    let x0 = null, y0 = null;
+    box.addEventListener("touchstart", (e) => { if (e.touches.length === 1) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; } }, { passive: true });
+    box.addEventListener("touchend", (e) => {
+      if (x0 === null || (window.visualViewport && visualViewport.scale > 1.05)) { x0 = null; return; }
+      const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) show(dx < 0 ? i + 1 : i - 1);
+      x0 = null;
+    });
+    // Tapping the dark area around the poster closes the viewer.
+    $(".lb-stage", box).addEventListener("click", (e) => { if (e.target === e.currentTarget) box.close(); });
+  }
+
   /* ---------------- Nav highlight ---------------- */
   function initNav() {
     const links = $$(".bar nav a");
@@ -416,5 +468,5 @@
   }
 
   Object.assign(api, { qrSvg, siteUrl, isPublic, reduceMotion });
-  initOrgans(); initCycle(); initQuiz(); initQR(); initNav(); initOffline();
+  initOrgans(); initCycle(); initQuiz(); initQR(); initGallery(); initNav(); initOffline();
 })();
