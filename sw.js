@@ -1,6 +1,6 @@
 /* Offline support: exhibition halls often have poor Wi-Fi.
    Bump VERSION whenever any file below changes so visitors get the update. */
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE = `two-cells-${VERSION}`;
 const CORE = [
   "./",

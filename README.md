@@ -9,7 +9,7 @@ It is a plain static site: no build step, no frameworks, no outside services. It
 | Page | What it's for |
 | --- | --- |
 | `index.html` | The website visitors open on their phones: an interactive organ diagram, how an egg matures in the ovary, a 28-day cycle dial with a live hormone chart, the four hormones, the sperm's journey and fertilization, the first week, health and self-care, a 12-question quiz, a poster gallery with downloads, and a QR code. |
-| `present.html` | Presentation mode for a laptop, TV or projector at the exhibit table. |
+| `present.html` | Presentation mode for a laptop, TV or projector at the exhibit table: 12 slides covering everything on the site. |
 | `anatomy_exhibition_website.html` | Redirects to the new site, so old links and QR codes still work. |
 
 ```
@@ -53,7 +53,7 @@ Open `present.html`, or follow the **Presentation mode** link in the footer.
 
 Presentation clickers work without any setup. To start straight into the loop, open `present.html?kiosk`.
 
-The slide diagrams are copied from `index.html`. If you change a diagram on the main page, make the same change in `present.html`.
+`present.html` is generated from `index.html`, because the slides reuse the same diagrams and text. After editing `index.html`, run `python3 tools/build_present.py` to update the slides.
 
 ## After editing
 
