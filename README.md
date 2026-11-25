@@ -8,7 +8,7 @@ It is a plain static site: no build step, no frameworks, no outside services. It
 
 | Page | What it's for |
 | --- | --- |
-| `index.html` | The website visitors open on their phones: an interactive organ diagram, how an egg matures in the ovary, a 28-day cycle dial with a live hormone chart, the four hormones, the sperm's journey and fertilization, the first week, health and self-care, a 12-question quiz, a poster gallery with downloads, and a QR code. |
+| `index.html` | The website visitors open on their phones: an interactive organ diagram, how an egg matures in the ovary, a 28-day cycle dial with a live hormone chart, the four hormones, the sperm's journey and fertilization, the first week, health and self-care, a 15-question quiz, a poster gallery with downloads, and a QR code. |
 | `present.html` | Presentation mode for a laptop, TV or projector at the exhibit table: 12 slides covering everything on the site. |
 | `anatomy_exhibition_website.html` | Redirects to the new site, so old links and QR codes still work. |
 
