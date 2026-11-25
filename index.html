@@ -31,6 +31,7 @@
         <li><a href="#cycle">Cycle</a></li>
         <li><a href="#fertilization">Fertilization</a></li>
         <li><a href="#first-week">First week</a></li>
+        <li><a href="#health">Health</a></li>
         <li><a href="#quiz">Quiz</a></li>
         <li><a href="#posters">Posters</a></li>
         <li><a href="#visit">Share</a></li>
@@ -44,6 +45,7 @@
   <div class="wrap">
     <div>
       <h1><span>From two cells</span> <span>to life</span></h1>
+      <p class="tagline">Designed for life. Built for wonder.</p>
       <p class="lede">How the female reproductive system prepares, every month, for one sperm and one egg to meet.</p>
       <p class="context">A companion to our working model for the Anatomy Working Model Making Competition cum Exhibition.</p>
       <div class="hero-actions">
@@ -80,12 +82,20 @@
   <div class="wrap">
     <div class="prose">
       <h2 id="system-h">A system built for one meeting</h2>
-      <p>The female reproductive system makes eggs, produces the hormones that run the monthly cycle, and gives a fertilized egg somewhere to grow. Tap an organ to find it on the diagram.</p>
+      <p>The female reproductive system is a set of internal organs, from the ovaries to the vagina, plus the external structures of the vulva. Together they do five jobs. Tap an organ to find it on the diagram.</p>
     </div>
+
+    <ul class="functions" aria-label="What the system does">
+      <li><b>Makes eggs</b><span>The ovaries mature and release one egg each cycle.</span></li>
+      <li><b>Makes hormones</b><span>Estrogen and progesterone run the monthly cycle.</span></li>
+      <li><b>Hosts fertilization</b><span>Sperm and egg meet in the fallopian tube.</span></li>
+      <li><b>Supports pregnancy</b><span>The uterus shelters and nourishes the embryo.</span></li>
+      <li><b>Gives birth</b><span>The uterus contracts; the vagina becomes the birth canal.</span></li>
+    </ul>
 
     <div class="organs">
       <figure class="organ-figure">
-        <svg class="tract" id="tract" viewBox="0 0 400 310" role="img" aria-labelledby="tract-t">
+        <svg class="tract" id="tract" viewBox="0 0 400 312" role="img" aria-labelledby="tract-t">
           <title id="tract-t">Front-view schematic of the uterus, two fallopian tubes, two ovaries, cervix and vagina.</title>
           <!-- ligaments -->
           <path class="lig" d="M150 104 C130 112 112 118 104 122"/>
@@ -135,31 +145,54 @@
             <path class="tissue" d="M186 222 L214 222 C218 248 222 268 226 292 L174 292 C178 268 182 248 186 222 Z"/>
             <text class="lbl" x="234" y="270">Vagina</text>
           </g>
+
+          <g class="part" data-part="vulva">
+            <ellipse class="tissue" cx="200" cy="297" rx="34" ry="7"/>
+            <text class="lbl" x="242" y="302">Vulva (external)</text>
+          </g>
         </svg>
         <figcaption>Simplified front view. Not to scale.</figcaption>
       </figure>
 
       <ul class="organ-list" id="organ-list">
         <li data-part="ovaries"><button type="button" aria-pressed="false">Ovaries</button>
-          <p>Two almond-sized glands, one on each side of the uterus. They hold the follicles that mature into eggs, release one egg each cycle, and make estrogen and progesterone.</p></li>
+          <p>Two almond-sized glands, one on each side of the uterus. Each egg waits inside a follicle, set in supporting tissue called the stroma. The ovaries release one egg each cycle and make estrogen and progesterone.</p></li>
         <li data-part="tubes"><button type="button" aria-pressed="false">Fallopian tubes</button>
-          <p>Finger-like fimbriae sweep the released egg into the tube. Fertilization usually happens in its widest part, the ampulla, and the tube then carries the early embryo to the uterus.</p></li>
+          <p>Each tube has four parts. The fimbriae and funnel-shaped infundibulum catch the released egg. The wide ampulla is where fertilization usually happens, and the narrow isthmus joins the uterus. Tiny hair-like cilia and gentle muscle contractions move the egg along.</p></li>
         <li data-part="uterus"><button type="button" aria-pressed="false">Uterus</button>
-          <p>A hollow, muscular organ about the size of a pear. Its thick muscle wall, the myometrium, stretches during pregnancy and contracts during birth.</p></li>
+          <p>A hollow, muscular organ about the size of a pear. Its domed top is the fundus and its main part is the body. It has three layers: the endometrium lining, the thick myometrium muscle, and a thin outer perimetrium. The muscle stretches during pregnancy and contracts during birth.</p></li>
         <li data-part="endometrium"><button type="button" aria-pressed="false">Endometrium</button>
           <p>The lining of the uterus. It thickens each cycle to receive an embryo. If no embryo implants, its upper layer is shed as the menstrual period.</p></li>
         <li data-part="cervix"><button type="button" aria-pressed="false">Cervix</button>
-          <p>The narrow lower end of the uterus that opens into the vagina. Its mucus turns thin and slippery around ovulation, which helps sperm pass through.</p></li>
+          <p>The narrow lower end of the uterus. Its cervical canal opens into the vagina. Its mucus turns thin and slippery around ovulation, which helps sperm pass through.</p></li>
         <li data-part="vagina"><button type="button" aria-pressed="false">Vagina</button>
-          <p>An elastic muscular canal from the cervix to the outside of the body. It is the birth canal and the route for menstrual flow. The external structures are called the vulva.</p></li>
+          <p>An elastic muscular canal from the cervix to the outside of the body. It receives sperm during intercourse, carries menstrual flow out of the body, and stretches to become the birth canal.</p></li>
+        <li data-part="vulva"><button type="button" aria-pressed="false">Vulva</button>
+          <p>The external genital structures: the labia majora and labia minora, the clitoris, and the vestibule around the vaginal and urethral openings. They protect the internal organs.</p></li>
       </ul>
     </div>
 
+    <div class="ovary-block">
+      <div class="prose">
+        <h3 class="sub-h">Inside the ovary: making an egg</h3>
+        <p>Making eggs is called oogenesis. It starts before birth, then pauses until puberty. From then on, a few follicles start to grow each cycle, and usually just one finishes.</p>
+      </div>
+      <ol class="follicles">
+        <li><div class="art"><svg class="cells" viewBox="0 0 60 60" role="img" aria-label="A small egg with one thin layer of cells"><circle cx="30" cy="30" r="11" fill="none" stroke="var(--hema-2)" stroke-width="2.5" stroke-dasharray="5 2"/><circle class="cyto" cx="30" cy="30" r="8"/><circle class="pn-f" cx="30" cy="30" r="3.0"/></svg></div><h4>Primordial follicle</h4><p>An immature egg wrapped in a single layer of flat cells. Almost all of the 1–2 million at birth stay at this stage.</p></li>
+        <li><div class="art"><svg class="cells" viewBox="0 0 60 60" role="img" aria-label="An egg surrounded by several layers of cells"><g class="corona"><circle cx="47.0" cy="30.0" r="3.2"/><circle cx="45.7" cy="36.5" r="3.2"/><circle cx="42.0" cy="42.0" r="3.2"/><circle cx="36.5" cy="45.7" r="3.2"/><circle cx="30.0" cy="47.0" r="3.2"/><circle cx="23.5" cy="45.7" r="3.2"/><circle cx="18.0" cy="42.0" r="3.2"/><circle cx="14.3" cy="36.5" r="3.2"/><circle cx="13.0" cy="30.0" r="3.2"/><circle cx="14.3" cy="23.5" r="3.2"/><circle cx="18.0" cy="18.0" r="3.2"/><circle cx="23.5" cy="14.3" r="3.2"/><circle cx="30.0" cy="13.0" r="3.2"/><circle cx="36.5" cy="14.3" r="3.2"/><circle cx="42.0" cy="18.0" r="3.2"/><circle cx="45.7" cy="23.5" r="3.2"/></g><g class="corona"><circle cx="42.5" cy="30.0" r="2.8"/><circle cx="40.8" cy="36.2" r="2.8"/><circle cx="36.2" cy="40.8" r="2.8"/><circle cx="30.0" cy="42.5" r="2.8"/><circle cx="23.8" cy="40.8" r="2.8"/><circle cx="19.2" cy="36.2" r="2.8"/><circle cx="17.5" cy="30.0" r="2.8"/><circle cx="19.2" cy="23.8" r="2.8"/><circle cx="23.7" cy="19.2" r="2.8"/><circle cx="30.0" cy="17.5" r="2.8"/><circle cx="36.2" cy="19.2" r="2.8"/><circle cx="40.8" cy="23.7" r="2.8"/></g><circle class="zona" style="stroke-width:2" cx="30" cy="30" r="9"/><circle class="cyto" cx="30" cy="30" r="8"/><circle class="pn-f" cx="30" cy="30" r="3.0"/></svg></div><h4>Growing follicle</h4><p>Each cycle FSH wakes a few follicles. Layers of cells multiply around the egg, and the zona pellucida forms.</p></li>
+        <li><div class="art"><svg class="cells" viewBox="0 0 60 60" role="img" aria-label="A large follicle with a fluid-filled space and the egg at one side"><circle cx="30" cy="30" r="26" fill="var(--hema-soft)" stroke="var(--hema-2)" stroke-width="2"/><g class="corona"><circle cx="53.5" cy="30.0" r="2.3"/><circle cx="53.0" cy="34.9" r="2.3"/><circle cx="51.5" cy="39.6" r="2.3"/><circle cx="49.0" cy="43.8" r="2.3"/><circle cx="45.7" cy="47.5" r="2.3"/><circle cx="41.8" cy="50.4" r="2.3"/><circle cx="37.3" cy="52.3" r="2.3"/><circle cx="32.5" cy="53.4" r="2.3"/><circle cx="27.5" cy="53.4" r="2.3"/><circle cx="22.7" cy="52.3" r="2.3"/><circle cx="18.3" cy="50.4" r="2.3"/><circle cx="14.3" cy="47.5" r="2.3"/><circle cx="11.0" cy="43.8" r="2.3"/><circle cx="8.5" cy="39.6" r="2.3"/><circle cx="7.0" cy="34.9" r="2.3"/><circle cx="6.5" cy="30.0" r="2.3"/><circle cx="7.0" cy="25.1" r="2.3"/><circle cx="8.5" cy="20.4" r="2.3"/><circle cx="11.0" cy="16.2" r="2.3"/><circle cx="14.3" cy="12.5" r="2.3"/><circle cx="18.2" cy="9.6" r="2.3"/><circle cx="22.7" cy="7.7" r="2.3"/><circle cx="27.5" cy="6.6" r="2.3"/><circle cx="32.5" cy="6.6" r="2.3"/><circle cx="37.3" cy="7.7" r="2.3"/><circle cx="41.8" cy="9.6" r="2.3"/><circle cx="45.7" cy="12.5" r="2.3"/><circle cx="49.0" cy="16.2" r="2.3"/><circle cx="51.5" cy="20.4" r="2.3"/><circle cx="53.0" cy="25.1" r="2.3"/></g><g class="corona"><circle cx="28.5" cy="38.0" r="2.2"/><circle cx="27.0" cy="43.1" r="2.2"/><circle cx="22.9" cy="46.6" r="2.2"/><circle cx="17.6" cy="47.4" r="2.2"/><circle cx="12.8" cy="45.2" r="2.2"/><circle cx="9.9" cy="40.7" r="2.2"/><circle cx="9.9" cy="35.3" r="2.2"/><circle cx="12.8" cy="30.8" r="2.2"/><circle cx="17.6" cy="28.6" r="2.2"/><circle cx="22.9" cy="29.4" r="2.2"/><circle cx="27.0" cy="32.9" r="2.2"/></g><circle class="zona" style="stroke-width:1.6" cx="19" cy="38" r="6.6"/><circle class="cyto" cx="19" cy="38" r="5.8"/><circle class="pn-f" cx="19" cy="38" r="2.2"/></svg></div><h4>Mature (Graafian) follicle</h4><p>A fluid-filled space, the antrum, swells the follicle to about 2 cm. It makes most of the cycle’s estrogen.</p></li>
+        <li><div class="art"><svg class="cells" viewBox="0 0 60 60" role="img" aria-label="A burst follicle releasing the egg"><circle cx="28" cy="34" r="21" fill="var(--hema-soft)"/><path d="M48 27.2 A21 21 0 1 1 35.2 14.3" fill="none" stroke="var(--hema-2)" stroke-width="2"/><g class="corona"><circle cx="55.0" cy="13.0" r="2.2"/><circle cx="53.6" cy="17.9" r="2.2"/><circle cx="49.7" cy="21.2" r="2.2"/><circle cx="44.7" cy="21.9" r="2.2"/><circle cx="40.1" cy="19.8" r="2.2"/><circle cx="37.4" cy="15.5" r="2.2"/><circle cx="37.4" cy="10.5" r="2.2"/><circle cx="40.1" cy="6.2" r="2.2"/><circle cx="44.7" cy="4.1" r="2.2"/><circle cx="49.7" cy="4.8" r="2.2"/><circle cx="53.6" cy="8.1" r="2.2"/></g><circle class="zona" style="stroke-width:1.6" cx="46" cy="13" r="6.6"/><circle class="cyto" cx="46" cy="13" r="5.8"/><circle class="pn-f" cx="46" cy="13" r="2.2"/></svg></div><h4>Ovulation</h4><p>The follicle bursts at the ovary’s surface and releases the egg, still wrapped in its corona radiata.</p></li>
+        <li><div class="art"><svg class="cells" viewBox="0 0 60 60" role="img" aria-label="A yellow corpus luteum"><path d="M30 6c9 0 13 6 18 9s7 11 5 18-6 14-14 17-17 1-22-5-8-14-5-21 9-18 18-18z" fill="#f2c879" stroke="#c99a3d" stroke-width="1.5"/><path d="M20 22c6 4 14 4 20 0M18 32c8 4 16 4 24 0M22 42c6 2 12 2 16 0" fill="none" stroke="#c99a3d" stroke-width="1.2" opacity=".7"/></svg></div><h4>Corpus luteum</h4><p>The empty follicle turns into a yellow gland that makes progesterone. Without a pregnancy it fades after about 14 days.</p></li>
+      </ol>
+    </div>
+
     <div class="facts" role="list">
-      <div role="listitem"><strong>1–2 million</strong><span>immature eggs present in the ovaries at birth</span></div>
-      <div role="listitem"><strong>About 400</strong><span>eggs actually released over a lifetime</span></div>
+      <div role="listitem"><strong>1–2 million</strong><span>immature eggs in the ovaries at birth</span></div>
+      <div role="listitem"><strong>300,000–400,000</strong><span>still left by puberty</span></div>
+      <div role="listitem"><strong>400–500</strong><span>eggs actually released over a lifetime</span></div>
       <div role="listitem"><strong>12–24 hours</strong><span>how long a released egg can be fertilized</span></div>
       <div role="listitem"><strong>Up to 5 days</strong><span>how long sperm can survive in the reproductive tract</span></div>
+      <div role="listitem"><strong>A few hundred</strong><span>of the millions of sperm released reach the egg</span></div>
     </div>
   </div>
 </section>
@@ -219,6 +252,20 @@
         </figure>
       </div>
     </div>
+
+    <div class="hormones">
+      <h3 class="sub-h">The four hormones</h3>
+      <ul>
+        <li><i class="swatch k-fsh"></i><h4>FSH <small>follicle-stimulating hormone</small></h4><p class="src">From the pituitary gland, at the base of the brain</p>
+          <p>Makes follicles in the ovary grow, so they start producing estrogen.</p></li>
+        <li><i class="swatch k-lh"></i><h4>LH <small>luteinizing hormone</small></h4><p class="src">From the pituitary gland</p>
+          <p>Its surge triggers ovulation. Afterwards it supports the corpus luteum as it makes progesterone.</p></li>
+        <li><i class="swatch k-est"></i><h4>Estrogen <small>also spelled oestrogen</small></h4><p class="src">From the growing follicles</p>
+          <p>Rebuilds the uterine lining and thins cervical mucus. It also drives breast development at puberty and supports bone and heart health.</p></li>
+        <li><i class="swatch k-pro"></i><h4>Progesterone</h4><p class="src">From the corpus luteum, later the placenta</p>
+          <p>Prepares and maintains the lining for pregnancy. When it falls, the lining is shed as a period.</p></li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -230,6 +277,16 @@
       <p>Of the millions of sperm released, a few hundred reach the egg in the ampulla of the fallopian tube. Only one gets in.</p>
     </div>
 
+    <h3 class="sub-h">The sperm’s journey</h3>
+    <ol class="route">
+      <li><b>Vagina</b><span>Millions of sperm arrive. Its acidic environment kills many of them.</span></li>
+      <li><b>Cervix</b><span>Around ovulation its mucus turns thin and stretchy, and lets thousands of the strongest swimmers through.</span></li>
+      <li><b>Uterus</b><span>Sperm swim up through the cavity, helped along by its muscle contractions.</span></li>
+      <li><b>Fallopian tube</b><span>They enter through the narrow isthmus. Chemical signals from the egg (chemotaxis) guide them on.</span></li>
+      <li><b>Ampulla</b><span>A few hundred reach the egg, and fertilization happens here.</span></li>
+    </ol>
+
+    <h3 class="sub-h">Fertilization, step by step</h3>
     <ol class="steps">
       <li>
         <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="Several sperm approaching an egg surrounded by corona cells"><g class="corona"><circle cx="46.5" cy="93.9" r="2.8"/><circle cx="39.2" cy="88.8" r="2.8"/><circle cx="34.3" cy="83.4" r="3.2"/><circle cx="30.9" cy="78.8" r="3.2"/><circle cx="26.9" cy="69.5" r="2.9"/><circle cx="24.4" cy="63.1" r="3.3"/><circle cx="24.4" cy="56.3" r="2.8"/><circle cx="27.5" cy="47.5" r="2.9"/><circle cx="29.4" cy="43.2" r="3.6"/><circle cx="33.2" cy="36.5" r="3.4"/><circle cx="39.1" cy="30.8" r="2.8"/><circle cx="44.7" cy="27.9" r="3.4"/><circle cx="52.8" cy="24.5" r="3.3"/><circle cx="60.2" cy="23.4" r="3.5"/><circle cx="68.5" cy="24.0" r="3.3"/><circle cx="75.4" cy="24.8" r="3.5"/><circle cx="81.5" cy="27.6" r="2.8"/><circle cx="87.8" cy="32.8" r="2.9"/><circle cx="91.8" cy="39.5" r="3.4"/><circle cx="96.6" cy="46.5" r="3.6"/><circle cx="98.5" cy="52.1" r="3.3"/><circle cx="98.9" cy="60.5" r="3.6"/><circle cx="97.8" cy="69.3" r="3.4"/><circle cx="96.8" cy="73.4" r="3.4"/><circle cx="91.6" cy="83.1" r="3.0"/><circle cx="87.8" cy="86.9" r="2.7"/><circle cx="81.2" cy="91.0" r="2.8"/><circle cx="76.3" cy="94.6" r="2.9"/><circle cx="68.2" cy="96.3" r="3.6"/><circle cx="61.4" cy="96.9" r="3.3"/><circle cx="51.0" cy="95.9" r="3.6"/><circle cx="54.8" cy="102.1" r="3.6"/><circle cx="45.6" cy="99.1" r="2.9"/><circle cx="41.6" cy="97.3" r="3.2"/><circle cx="34.2" cy="92.3" r="2.7"/><circle cx="29.4" cy="87.7" r="3.3"/><circle cx="23.5" cy="79.8" r="3.2"/><circle cx="21.1" cy="74.2" r="2.8"/><circle cx="18.9" cy="65.7" r="3.6"/><circle cx="19.2" cy="58.6" r="3.1"/><circle cx="19.2" cy="54.1" r="2.8"/><circle cx="21.5" cy="47.1" r="2.9"/><circle cx="25.2" cy="39.4" r="2.7"/><circle cx="28.7" cy="33.8" r="3.1"/><circle cx="32.5" cy="27.8" r="3.3"/><circle cx="39.5" cy="23.8" r="3.1"/><circle cx="47.1" cy="20.3" r="3.6"/><circle cx="56.8" cy="17.4" r="3.2"/><circle cx="60.4" cy="17.7" r="3.1"/><circle cx="68.7" cy="17.0" r="2.9"/><circle cx="75.1" cy="18.2" r="3.3"/><circle cx="82.3" cy="22.0" r="2.7"/><circle cx="90.4" cy="26.6" r="3.6"/><circle cx="95.2" cy="33.4" r="3.1"/><circle cx="99.0" cy="37.1" r="3.3"/><circle cx="102.6" cy="46.6" r="2.9"/><circle cx="105.4" cy="53.9" r="3.6"/><circle cx="105.5" cy="61.5" r="3.5"/><circle cx="104.5" cy="66.4" r="3.1"/><circle cx="102.2" cy="72.7" r="3.0"/><circle cx="100.0" cy="80.9" r="3.7"/><circle cx="95.6" cy="88.0" r="3.7"/><circle cx="87.9" cy="94.1" r="2.9"/><circle cx="84.1" cy="96.3" r="2.9"/><circle cx="76.3" cy="101.3" r="3.6"/><circle cx="69.5" cy="102.6" r="3.5"/><circle cx="63.7" cy="103.2" r="3.6"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona" cx="62" cy="60" r="30"/><circle class="pn-f" cx="68" cy="56" r="7"/><use href="#sp" transform="translate(11.3 41.5) rotate(20) scale(0.42)"/><use href="#sp" transform="translate(7.5 79.8) rotate(-20) scale(0.42)"/><use href="#sp" transform="translate(29.9 14.1) rotate(55) scale(0.42)"/><use href="#sp" transform="translate(33.5 109.4) rotate(-60) scale(0.42)"/><use href="#sp" transform="translate(91.0 9.8) rotate(120) scale(0.42)"/></svg></div>
@@ -244,12 +301,12 @@
       <li>
         <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="A sperm inside the egg; the zona has hardened and other sperm are blocked outside"><g class="corona"><circle cx="87.5" cy="33.7" r="3.0"/><circle cx="91.7" cy="38.1" r="2.9"/><circle cx="95.5" cy="45.2" r="3.7"/><circle cx="98.6" cy="54.1" r="3.0"/><circle cx="98.6" cy="61.5" r="3.1"/><circle cx="98.4" cy="65.4" r="3.2"/><circle cx="95.6" cy="74.2" r="3.2"/><circle cx="93.1" cy="79.2" r="2.8"/><circle cx="87.4" cy="85.9" r="2.7"/><circle cx="82.1" cy="90.5" r="3.3"/><circle cx="75.1" cy="95.1" r="3.4"/><circle cx="67.1" cy="97.3" r="3.1"/><circle cx="60.9" cy="97.8" r="2.9"/><circle cx="52.1" cy="95.9" r="2.8"/><circle cx="44.5" cy="93.3" r="3.4"/><circle cx="38.5" cy="89.3" r="2.9"/><circle cx="34.0" cy="84.2" r="3.6"/><circle cx="28.7" cy="77.4" r="3.3"/><circle cx="26.0" cy="70.0" r="3.4"/><circle cx="26.1" cy="64.8" r="2.9"/><circle cx="25.8" cy="57.0" r="3.6"/><circle cx="26.5" cy="48.8" r="3.4"/><circle cx="29.9" cy="41.6" r="2.7"/><circle cx="34.2" cy="34.9" r="3.2"/><circle cx="39.1" cy="30.6" r="2.8"/><circle cx="46.5" cy="26.9" r="2.8"/><circle cx="51.6" cy="24.1" r="2.9"/><circle cx="60.8" cy="22.2" r="3.2"/><circle cx="67.0" cy="23.4" r="3.4"/><circle cx="75.7" cy="25.4" r="3.4"/><circle cx="79.8" cy="28.2" r="3.0"/><circle cx="59.2" cy="17.0" r="2.7"/><circle cx="65.6" cy="17.5" r="3.4"/><circle cx="75.8" cy="18.9" r="3.0"/><circle cx="81.8" cy="21.9" r="3.2"/><circle cx="87.2" cy="24.3" r="2.9"/><circle cx="95.6" cy="32.0" r="2.7"/><circle cx="98.6" cy="36.4" r="3.7"/><circle cx="101.3" cy="43.4" r="2.9"/><circle cx="103.9" cy="52.6" r="3.3"/><circle cx="104.9" cy="56.5" r="3.7"/><circle cx="105.4" cy="64.0" r="3.2"/><circle cx="102.8" cy="74.6" r="3.0"/><circle cx="99.3" cy="81.3" r="2.7"/><circle cx="97.4" cy="84.4" r="3.2"/><circle cx="91.3" cy="90.6" r="3.1"/><circle cx="86.1" cy="96.3" r="2.7"/><circle cx="77.7" cy="100.6" r="2.8"/><circle cx="69.6" cy="102.7" r="3.6"/><circle cx="64.8" cy="102.7" r="3.1"/><circle cx="54.3" cy="102.5" r="3.1"/><circle cx="49.5" cy="100.8" r="2.8"/><circle cx="43.5" cy="99.4" r="3.0"/><circle cx="34.7" cy="92.7" r="3.0"/><circle cx="30.7" cy="88.7" r="3.1"/><circle cx="24.2" cy="81.8" r="3.5"/><circle cx="21.4" cy="76.2" r="3.7"/><circle cx="19.6" cy="69.2" r="2.8"/><circle cx="19.1" cy="60.9" r="3.5"/><circle cx="19.8" cy="53.9" r="2.8"/><circle cx="22.2" cy="45.6" r="3.2"/><circle cx="23.8" cy="40.9" r="3.5"/><circle cx="29.4" cy="32.5" r="3.4"/><circle cx="32.2" cy="28.9" r="3.1"/><circle cx="38.0" cy="25.0" r="2.9"/><circle cx="47.1" cy="19.7" r="2.9"/><circle cx="54.2" cy="16.9" r="3.2"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona hard" cx="62" cy="60" r="30"/><circle class="pn-f" cx="68" cy="56" r="7"/><use href="#sp" transform="translate(48.0 60.0) rotate(0) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(26.6 24.6) rotate(45) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(25.9 96.1) rotate(-45) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(79.8 11.1) rotate(110) scale(0.42)"/><use href="#sp" class="blocked" transform="translate(88.0 105.0) rotate(-120) scale(0.42)"/></svg></div>
         <h3>One sperm fuses</h3>
-        <p>The first sperm to fuse with the egg membrane triggers the cortical reaction. The zona hardens, and every other sperm is shut out.</p>
+        <p>The first sperm to fuse with the egg membrane triggers the cortical reaction. The zona hardens into a fertilization membrane that blocks polyspermy: no other sperm can get in.</p>
       </li>
       <li>
         <div class="art"><svg class="cells" viewBox="0 0 120 120" role="img" aria-label="Male and female pronuclei side by side in the centre of the zygote"><g class="corona"><circle cx="86.1" cy="87.2" r="3.1"/><circle cx="72.3" cy="95.1" r="3.0"/><circle cx="54.1" cy="96.8" r="3.5"/><circle cx="39.9" cy="89.5" r="3.3"/><circle cx="29.5" cy="77.0" r="2.8"/><circle cx="24.2" cy="61.6" r="2.8"/><circle cx="28.1" cy="44.5" r="3.6"/><circle cx="37.8" cy="32.5" r="3.0"/><circle cx="52.7" cy="24.3" r="3.7"/><circle cx="70.9" cy="23.4" r="2.7"/><circle cx="83.3" cy="29.3" r="3.6"/><circle cx="95.1" cy="43.1" r="2.7"/><circle cx="99.7" cy="58.8" r="3.6"/><circle cx="95.8" cy="76.9" r="3.0"/><circle cx="96.3" cy="86.1" r="3.4"/><circle cx="80.8" cy="99.1" r="3.4"/><circle cx="65.2" cy="102.8" r="3.3"/><circle cx="51.4" cy="102.2" r="3.0"/><circle cx="33.3" cy="92.3" r="3.0"/><circle cx="25.3" cy="81.5" r="3.4"/><circle cx="19.8" cy="63.4" r="2.8"/><circle cx="20.7" cy="47.5" r="3.1"/><circle cx="27.8" cy="33.6" r="2.7"/><circle cx="40.9" cy="22.6" r="3.7"/><circle cx="58.2" cy="16.5" r="3.2"/><circle cx="73.2" cy="18.9" r="3.7"/><circle cx="89.7" cy="27.5" r="2.7"/><circle cx="100.1" cy="39.5" r="3.1"/><circle cx="104.9" cy="54.6" r="3.7"/><circle cx="102.7" cy="71.0" r="3.1"/></g><circle class="cyto" cx="62" cy="60" r="28"/><circle class="zona hard" cx="62" cy="60" r="30"/><circle class="pn-m" cx="55" cy="60" r="7"/><circle class="pn-f" cx="69" cy="60" r="7"/></svg></div>
         <h3>A zygote forms</h3>
-        <p>The egg finishes its second meiotic division. The male and female pronuclei, each with 23 chromosomes, combine to give the zygote its 46.</p>
+        <p>The egg finishes its second meiotic division. The male and female pronuclei, each with 23 chromosomes, combine. The zygote has 46, restoring the diploid (2n) number.</p>
       </li>
     </ol>
 
@@ -257,9 +314,10 @@
       <section aria-labelledby="sperm-h">
         <h3 id="sperm-h">Sperm cell</h3>
         <ul>
+          <li><b>Head</b>: holds the acrosome and the nucleus</li>
           <li><b>Acrosome</b>: enzyme-filled cap on the head</li>
           <li><b>Nucleus</b>: 23 chromosomes from the father</li>
-          <li><b>Middle piece</b>: packed with mitochondria that power swimming</li>
+          <li><b>Middle piece (midpiece)</b>: packed with mitochondria that power swimming</li>
           <li><b>Tail (flagellum)</b>: whips to drive the cell forward</li>
         </ul>
       </section>
@@ -305,12 +363,58 @@
   </div>
 </section>
 
+<!-- ===================== HEALTH ===================== -->
+<section class="section" id="health" aria-labelledby="health-h">
+  <div class="wrap">
+    <div class="prose">
+      <h2 id="health-h">Caring for the system</h2>
+      <p>Knowing how the system works makes it easier to look after, and to notice when something is off.</p>
+    </div>
+    <div class="health">
+      <section aria-labelledby="cond-h">
+        <h3 id="cond-h">Common conditions</h3>
+        <dl>
+          <dt>PCOS (polycystic ovary syndrome)</dt>
+          <dd>A hormone imbalance that can cause irregular periods, acne, extra hair growth and weight gain, and can make it harder to get pregnant.</dd>
+          <dt>Endometriosis</dt>
+          <dd>Tissue similar to the uterine lining grows outside the uterus, causing painful periods and pelvic pain.</dd>
+          <dt>Fibroids</dt>
+          <dd>Non-cancerous growths in the muscle of the uterus that can cause heavy or painful periods.</dd>
+        </dl>
+      </section>
+      <section aria-labelledby="know-h">
+        <h3 id="know-h">Good to know</h3>
+        <ul>
+          <li>Some period pain is common. Pain that stops you from going about your day is not normal, and is worth seeing a doctor about.</li>
+          <li>The HPV vaccine protects against the virus behind most cervical cancers.</li>
+          <li>Regular cervical screening (the Pap smear) finds early cell changes in the cervix, long before they cause harm.</li>
+          <li>A cycle that suddenly changes or stops is worth getting checked.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="care-h">
+        <h3 id="care-h">Everyday self-care</h3>
+        <ul class="checks">
+          <li>Drink enough water</li>
+          <li>Eat a balanced diet with iron-rich foods</li>
+          <li>Move regularly</li>
+          <li>Sleep well and manage stress</li>
+          <li>Track your cycle to learn your pattern</li>
+          <li>Go for routine check-ups</li>
+        </ul>
+      </section>
+    </div>
+    <blockquote class="closing">
+      <p>Your body is not a problem to be fixed. It’s a system to be understood and cared for.</p>
+    </blockquote>
+  </div>
+</section>
+
 <!-- ===================== QUIZ ===================== -->
 <section class="section" id="quiz" aria-labelledby="quiz-h">
   <div class="wrap">
     <div class="prose">
       <h2 id="quiz-h">Test yourself</h2>
-      <p>Ten questions on everything above. You get the answer and an explanation after each one.</p>
+      <p>Twelve questions on everything above. You get the answer and an explanation after each one.</p>
     </div>
     <div class="quiz" id="quiz-box">
       <noscript><p>The quiz needs JavaScript turned on.</p></noscript>
@@ -322,33 +426,61 @@
 <section class="section" id="posters" aria-labelledby="posters-h">
   <div class="wrap">
     <div class="prose">
-      <h2 id="posters-h">Exhibition posters</h2>
-      <p>The illustrated charts displayed with our model. Open one to see it full size.</p>
+      <h2 id="posters-h">Poster gallery</h2>
+      <p>The 11 posters made for our exhibit. Tap one to view it full size and download it.</p>
     </div>
-    <div class="posters">
-      <figure class="poster">
-        <a href="assets/img/poster-system-1066.webp">
-          <picture>
-            <source type="image/webp" srcset="assets/img/poster-system-640.webp 640w, assets/img/poster-system-1066.webp 1066w" sizes="(min-width: 72rem) 36rem, (min-width: 40rem) 50vw, 100vw">
-            <img src="assets/img/poster-system-1066.jpg" width="1066" height="1599" loading="lazy" decoding="async"
-                 alt="Illustrated poster of the female reproductive system: main organs, the menstrual cycle, key hormones, the fertilization process and self-care tips.">
-          </picture>
-        </a>
-        <figcaption>The female reproductive system and fertilization</figcaption>
-      </figure>
-      <figure class="poster">
-        <a href="assets/img/poster-fertilization-732.webp">
-          <picture>
-            <source type="image/webp" srcset="assets/img/poster-fertilization-640.webp 640w, assets/img/poster-fertilization-732.webp 732w" sizes="(min-width: 72rem) 36rem, (min-width: 40rem) 50vw, 100vw">
-            <img src="assets/img/poster-fertilization-732.jpg" width="732" height="1172" loading="lazy" decoding="async"
-                 alt="Labelled fertilization diagram showing sperm structure, the parts of the egg cell, and four stages from sperm approaching the egg to the zygote forming.">
-          </picture>
-        </a>
-        <figcaption>Fertilization diagram: how sperm and egg unite</figcaption>
-      </figure>
-    </div>
+    <ul class="gallery" id="gallery">
+      <li><a href="assets/posters/01-system-at-a-glance.jpg" data-full="assets/posters/01-system-at-a-glance.webp" data-title="System at a glance">
+        <img src="assets/posters/01-system-at-a-glance-400.webp" width="400" height="578" loading="lazy" decoding="async" alt="Navy and gold poster with a labelled uterus diagram, an ovary section, the main organs, functions, hormones, sperm and egg structure, a 28-day cycle wheel, fertilization steps and self-care tips.">
+        <span>System at a glance</span></a></li>
+      <li><a href="assets/posters/02-system-and-fertilization.jpg" data-full="assets/posters/02-system-and-fertilization.webp" data-title="The system and fertilization">
+        <img src="assets/posters/02-system-and-fertilization-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Illustrated poster of the main organs, the menstrual cycle, common conditions, key hormones, the fertilization process and self-care tips.">
+        <span>The system and fertilization</span></a></li>
+      <li><a href="assets/posters/03-organs-and-functions.jpg" data-full="assets/posters/03-organs-and-functions.webp" data-title="Organs, functions and the path to implantation">
+        <img src="assets/posters/03-organs-and-functions-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Pastel poster with a full system overview, the main organs and functions, hormones, the menstrual cycle phases, fertilization steps and the path to implantation.">
+        <span>Organs, functions and the path to implantation</span></a></li>
+      <li><a href="assets/posters/04-oogenesis-and-cycle.jpg" data-full="assets/posters/04-oogenesis-and-cycle.webp" data-title="Oogenesis and the 28-day cycle">
+        <img src="assets/posters/04-oogenesis-and-cycle-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Pink poster with the system overview, organs and functions, oogenesis, hormones and a 28-day menstrual cycle timeline.">
+        <span>Oogenesis and the 28-day cycle</span></a></li>
+      <li><a href="assets/posters/05-sperm-and-ovum.jpg" data-full="assets/posters/05-sperm-and-ovum.webp" data-title="Organs, cycle, sperm and ovum">
+        <img src="assets/posters/05-sperm-and-ovum-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Pink poster with the system overview, organs, the menstrual cycle, hormones, sperm and ovum structure and the fertilization process.">
+        <span>Organs, cycle, sperm and ovum</span></a></li>
+      <li><a href="assets/posters/06-timeline-overview.jpg" data-full="assets/posters/06-timeline-overview.webp" data-title="Timeline overview">
+        <img src="assets/posters/06-timeline-overview-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Peach poster arranged along a timeline: introduction, organs, the cycle, hormones, the egg, fertilization steps, a fun fact and self-care tips.">
+        <span>Timeline overview</span></a></li>
+      <li><a href="assets/posters/07-quick-reference.jpg" data-full="assets/posters/07-quick-reference.webp" data-title="Quick reference">
+        <img src="assets/posters/07-quick-reference-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Lavender poster with a labelled diagram and panels on organs, functions, hormones, the cycle, fertilization and self-care.">
+        <span>Quick reference</span></a></li>
+      <li><a href="assets/posters/08-section-summary.jpg" data-full="assets/posters/08-section-summary.webp" data-title="Section-by-section summary">
+        <img src="assets/posters/08-section-summary-400.webp" width="400" height="600" loading="lazy" decoding="async" alt="Watercolour poster with numbered sections on organs, functions, the cycle, hormones and fertilization.">
+        <span>Section-by-section summary</span></a></li>
+      <li><a href="assets/posters/09-fertilization-diagram.jpg" data-full="assets/posters/09-fertilization-diagram.webp" data-title="Fertilization diagram">
+        <img src="assets/posters/09-fertilization-diagram-400.webp" width="400" height="640" loading="lazy" decoding="async" alt="Labelled fertilization diagram showing sperm structure, the parts of the egg cell, and four stages from sperm approaching the egg to the zygote forming.">
+        <span>Fertilization diagram</span></a></li>
+      <li><a href="assets/posters/10-path-of-fertilization.jpg" data-full="assets/posters/10-path-of-fertilization.webp" data-title="The path of fertilization">
+        <img src="assets/posters/10-path-of-fertilization-400.webp" width="400" height="716" loading="lazy" decoding="async" alt="Diagram of the route sperm take from the vagina through the cervix and uterus to the ampulla, then fertilization and implantation.">
+        <span>The path of fertilization</span></a></li>
+      <li><a href="assets/posters/11-path-of-fertilization-dark.jpg" data-full="assets/posters/11-path-of-fertilization-dark.webp" data-title="The path of fertilization (dark)">
+        <img src="assets/posters/11-path-of-fertilization-dark-400.webp" width="400" height="731" loading="lazy" decoding="async" alt="Dark poster of the six stages from sperm entry to implantation, with a labelled fertilization diagram.">
+        <span>The path of fertilization (dark)</span></a></li>
+    </ul>
+    <p class="gallery-all"><a class="btn ghost" href="assets/posters/from-two-cells-to-life-posters.zip" download>Download all posters (ZIP, 3.3 MB)</a></p>
   </div>
 </section>
+
+<dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+  <div class="lb-bar">
+    <p class="lb-title"><span id="lb-title"></span> <span class="lb-count" id="lb-count"></span></p>
+    <a class="btn ghost" id="lb-download" href="" download>Download</a>
+    <a class="lb-link" id="lb-open" href="" target="_blank" rel="noopener">Open full size</a>
+    <button class="icon-btn" type="button" id="lb-close" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+  <div class="lb-stage">
+    <button class="icon-btn lb-nav" type="button" id="lb-prev" aria-label="Previous poster"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 2.5 5 8l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    <img id="lb-img" alt="">
+    <button class="icon-btn lb-nav" type="button" id="lb-next" aria-label="Next poster"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+</dialog>
 
 <!-- ===================== VISIT / SHARE ===================== -->
 <section class="section" id="visit" aria-labelledby="visit-h">

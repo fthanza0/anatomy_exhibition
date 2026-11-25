@@ -1,6 +1,6 @@
 /* Offline support: exhibition halls often have poor Wi-Fi.
    Bump VERSION whenever any file below changes so visitors get the update. */
-const VERSION = "v2";
+const VERSION = "v3";
 const CACHE = `two-cells-${VERSION}`;
 const CORE = [
   "./",
@@ -30,7 +30,8 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   const req = e.request;
-  if (req.method !== "GET" || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== "GET" || url.origin !== location.origin || url.pathname.endsWith(".zip")) return;
   if (req.mode === "navigate") {
     // Pages: network first so edits show up, cache as fallback.
     e.respondWith(
