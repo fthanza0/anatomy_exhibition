@@ -227,9 +227,9 @@ h3 { font-size: 1.25rem; line-height: 1.25; margin: 0 0 .4rem; color: var(--ink)
 .organ-list li.on button { color: var(--eosin); }
 .organ-list p { margin: .2rem 0 0; max-width: 52ch; }
 
-.facts { display: grid; gap: 1px; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-top: 3rem; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; }
+.facts { display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 3rem; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; }
 .facts > div { background: var(--surface); padding: 1.25rem 1.25rem 1.4rem; }
-.facts strong { display: block; font-size: 2rem; line-height: 1.1; color: var(--hema); letter-spacing: -.02em; }
+.facts strong { display: block; font-size: clamp(1.5rem, 2.6vw, 2.25rem); line-height: 1.1; color: var(--hema); letter-spacing: -.02em; }
 .facts span { font-size: .9375rem; color: var(--muted); }
 
 /* ---------- Cycle dial (the centrepiece) ---------- */
