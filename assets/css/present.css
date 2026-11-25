@@ -165,3 +165,57 @@ body.show-ui .controls, .controls:focus-within { opacity: 1; }
 .hint.gone { opacity: 0; pointer-events: none; }
 body.kiosk { cursor: none; }
 body.kiosk.show-ui { cursor: auto; }
+
+/* ---- Slides added for the poster content (reuse the site's markup, re-scaled for the stage) ---- */
+.s-ovary, .s-hormones, .s-journey { grid-template-rows: auto 1fr; }
+.s-health { grid-template-rows: auto auto auto; align-content: start; }
+.s-ovary .kicker, .s-hormones .kicker, .s-journey .kicker { max-width: 60ch; }
+
+/* Inside the ovary: always five across on the stage, whatever the window size */
+.stage .follicles { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.6rem; margin: 0; align-self: center; }
+.stage .follicles::before { left: 10%; right: 10%; top: 4rem; bottom: auto; width: auto; height: .2rem; background: linear-gradient(90deg, var(--hema-2), #e0a83a); }
+.stage .follicles li { display: block; padding: 0; }
+.stage .follicles .art { width: 8rem; height: 8rem; margin: 0 0 1rem; }
+.stage .follicles .art svg { width: 6.2rem; height: 6.2rem; }
+.stage .follicles h4 { font-size: 1.4rem; margin-bottom: .4rem; }
+.stage .follicles p { font-size: 1.05rem; line-height: 1.45; }
+
+/* Hormones: four cards in a row */
+.stage .hormones { align-self: center; }
+.stage .hormones ul { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem; margin: 0; }
+.stage .hormones li { padding: 1.5rem 1.4rem 1.6rem; }
+.stage .hormones h4 { font-size: 1.9rem; }
+.stage .hormones small { display: block; font-size: .95rem; margin-top: .2rem; }
+.stage .hormones .src { font-size: 1rem; margin: .6rem 0 .8rem; }
+.stage .hormones p { font-size: 1.15rem; line-height: 1.45; }
+
+/* Sperm's journey: five stops along a line */
+.stage .route { grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0; align-self: center; }
+.stage .route::before { left: 1.5rem; right: 1.5rem; top: 1.5rem; bottom: auto; width: auto; height: .2rem; background: linear-gradient(90deg, var(--hema-2), var(--eosin)); }
+.stage .route li { display: block; padding: 0 1.4rem 0 0; }
+.stage .route li::before { width: 3rem; height: 3rem; font-size: 1.3rem; margin: 0 0 1rem; }
+.stage .route b { font-size: 1.6rem; }
+.stage .route span { font-size: 1.15rem; line-height: 1.45; margin-top: .4rem; }
+
+/* Health: three columns and the closing line */
+.stage .health { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.4rem; margin: 1.4rem 0 0; font-size: 1.02rem; line-height: 1.45; }
+.stage .health h3 { font-size: 1.4rem; }
+.stage .health dt { margin-top: .6rem; }
+.stage .health li { margin: .4rem 0; }
+.s-health .closing { margin: 2.4rem 0 0; max-width: none; }
+.s-health .closing p { font-size: 1.9rem; color: var(--eosin); max-width: 48rem; }
+
+/* Facts: six numbers, two columns so the long ones stay on one line */
+.p-facts { gap: 1.4rem 4rem; }
+.p-facts strong { font-size: 3.4rem; }
+.p-facts span { font-size: 1.25rem; margin-top: .3rem; }
+
+/* Posters: a wall of thumbnails with a QR to the gallery */
+.s-posters { grid-template-columns: 1.35fr .9fr; align-items: center; gap: 3rem; }
+.poster-wall { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; }
+.poster-wall img { width: 6rem; aspect-ratio: 2 / 3; object-fit: cover; object-position: top; border-radius: .5rem; border: 1px solid var(--line); box-shadow: 0 .8rem 1.6rem -1rem rgb(0 0 0 / .8); }
+.poster-wall img:nth-child(odd) { transform: rotate(-2deg); }
+.poster-wall img:nth-child(even) { transform: rotate(2deg) translateY(.4rem); }
+.poster-cta h2 { font-size: 3.6rem; }
+.poster-cta .kicker { font-size: 1.4rem; margin-bottom: 2rem; }
+.poster-cta .qr-slot { width: 10rem; }
